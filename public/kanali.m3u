@@ -1,0 +1,951 @@
+#EXTM3U
+#EXTINF:0 tvg-country="RS" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/24Kitchen.png/512px-24Kitchen.png" group-title="Undefined",24Kitchen Serbia (720p)
+http://91.132.74.5:8000/play/a00a?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="RS" tvg-logo="https://i.imgur.com/UDyxgXf.png" group-title="Entertainment",Balkan Radio Salzburg (480p)
+https://channel.streams.ovh:1936/balkanradiosalzburgtv/balkanradiosalzburgtv/playlist.m3u8?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="RS" tvg-logo="https://i.imgur.com/LdeA1Cn.png" group-title="Music;Undefined",DM Sat
+https://viamotionhsi.netplus.ch/live/eds/dmsat/browser-dash/dmsat.mpd?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="RS" tvg-logo="" group-title="Undefined",DM Sat
+https://viamotionhsi.netplus.ch/live/eds/dmsat/browser-HLS8/dmsat.m3u8?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="AL;AM;BG;DK;FI;FR;GE;DE;GR;HU;IT;NO;PT;RS;ES;SE;CH;TR;UA" tvg-logo="https://i.imgur.com/m7IC01U.png" group-title="Sport",Extreme Sports
+https://edge02.odtv.az/o4/extremesport/playlist.m3u8?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="RS" tvg-logo="" group-title="Undefined",MIS Televizija (720p) [Not 24/7]
+https://5afd52b55ff79.streamlock.net/MISTV/myStream/playlist.m3u8?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="RS" tvg-logo="https://i.imgur.com/9dz8MsD.png" group-title="Music",Muzzik ELECTRO (720p)
+https://muzzik-live.morescreens.com/mts-9/playlist.m3u8?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="RS" tvg-logo="https://www.lyngsat.com/logo/tv/nn/n1_rs.png" group-title="News",N1 RS
+https://best-str.umn.cdn.united.cloud/stream?channel=n1srp&p=n1Sh4redSecre7iNf0&sp=n1info&stream=sp1400&u=n1info&checkedby:iptvcat.net
+#EXTINF:0 tvg-country="RS" tvg-logo="https://i.imgur.com/dua57HD.png" group-title="Undefined",Narodna TV (720p)
+https://edge8.pink.rs/narodnatv/index.m3u8?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="RS" tvg-logo="https://i.imgur.com/66wHb7E.png" group-title="Undefined",Pink
+https://live.rednet.rs/providus/pink1.m3u8?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="RS" tvg-logo="" group-title="Undefined",Pink (720p)
+https://edge8.pink.rs/pinktv/index.m3u8?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="RS" tvg-logo="" group-title="Undefined",Pink Extra (576p)
+http://109.105.201.198/PINKEXTRA/playlist.m3u8?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="RS" tvg-logo="" group-title="Undefined",Pink Family (576p)
+http://109.105.201.198/PINKFAMILY/playlist.m3u8?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="RS" tvg-logo="" group-title="Undefined",Pink Film (576p)
+http://109.105.201.198/PINKFILM/playlist.m3u8?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="RS" tvg-logo="" group-title="Undefined",Pink Folk 1 (576p)
+http://109.105.201.198/PINKFOLK/playlist.m3u8?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="RS" tvg-logo="" group-title="Undefined",Pink Koncert (576p)
+http://109.105.201.198/PINKKONCERT/playlist.m3u8?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="RS" tvg-logo="" group-title="Undefined",Pink Movies (576p)
+http://109.105.201.198/PINKMOVIES/playlist.m3u8?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="RS" tvg-logo="" group-title="Undefined",Pink Pedia (576p)
+http://109.105.201.198/PINKPEDIA/playlist.m3u8?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="RS" tvg-logo="" group-title="Undefined",Pink Sci-Fi & Fantasy (576p)
+http://109.105.201.198/PINKSCIFI/playlist.m3u8?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="RS" tvg-logo="" group-title="Undefined",Pink Serije (576p)
+http://109.105.201.198/PINKSERIJE/playlist.m3u8?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="RS" tvg-logo="" group-title="Undefined",Pink World (360p)
+http://109.105.201.198/PINKWORLD/playlist.m3u8?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="RS" tvg-logo="" group-title="Undefined",Pink World Cinema (576p)
+http://109.105.201.198/PINKWORLDCINEMA/playlist.m3u8?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="RS" tvg-logo="" group-title="Undefined",Pink Zabava (360p)
+http://109.105.201.198/PINKZABAVA/playlist.m3u8?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="RS" tvg-logo="" group-title="Undefined",Pink n Roll (360p)
+http://109.105.201.198/PINKROLL/playlist.m3u8?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="RS" tvg-logo="" group-title="Undefined",RTS 1 (720p) [Not 24/7]
+https://webtvstream.bhtelecom.ba/rts1.m3u8?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="RS" tvg-logo="" group-title="Undefined",RTS 2 (720p) [Not 24/7]
+https://webtvstream.bhtelecom.ba/rts2.m3u8?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="RS" tvg-logo="https://i.imgur.com/LjunOdy.png" group-title="Undefined",RTS Svet HD (720p)
+https://viamotionhsi.netplus.ch/live/eds/rtssat/browser-dash/rtssat.mpd?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="RS" tvg-logo="" group-title="Undefined",RTS Svet HD (720p)
+https://viamotionhsi.netplus.ch/live/eds/rtssat/browser-HLS8/rtssat.m3u8?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="RS" tvg-logo="https://i.imgur.com/gP2OT4S.png" group-title="Music;Undefined",Radio Hit FM TV (720p)
+https://peer2.tdiradio.com/static/streaming-playlists/hls/bab99862-ec1c-474f-9a02-4f8c8677d565/0.m3u8?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="RS" tvg-logo="https://i.imgur.com/g2HpLX1.png" group-title="Music;Undefined",Radio Karolina TV (720p)
+https://peer2.tdiradio.com/static/streaming-playlists/hls/4207de1d-52e8-4591-ad9e-218069b864d1/0.m3u8?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="RS" tvg-logo="https://i.imgur.com/41eE8fl.png" group-title="Music",Radio Lola (720p) [Not 24/7]
+https://peer2.tdiradio.com/static/streaming-playlists/hls/7c3ea8d3-49dc-4e1b-8b1e-dc6fab71f5cf/0.m3u8?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="RS" tvg-logo="https://i.imgur.com/vy66EXI.png" group-title="Undefined",SOS Kanal Plus (720p)
+https://53be5ef2d13aa.streamlock.net/soskanalplus/soskanalplus.stream/playlist.m3u8?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="RS" tvg-logo="https://i.imgur.com/lm9Fgsp.png" group-title="Undefined",Sandzak TV (576p)
+https://streaming.iptv.nextfiber.rs/nxt004/master.m3u8?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="RS" tvg-logo="https://i.imgur.com/POdTmaD.png" group-title="Music;Undefined",TDI Radio TV
+https://peer2.tdiradio.com/static/streaming-playlists/hls/8f5d84ce-e8ac-4109-9975-9665f5605557/master.m3u8?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="RS" tvg-logo="" group-title="Undefined",TV Kanal M (576p)
+http://176.67.210.1/hls/kanalm.m3u8?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="RS" tvg-logo="" group-title="Undefined",TV Pi Canal Pirot (576p) [Not 24/7]
+http://stream.pikanal.rs/pikanal/pgm.m3u8?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="RS" tvg-logo="https://i.imgur.com/X4vBCVA.png" group-title="Undefined",TV Pi Canal Pirot (576p) [Not 24/7]
+https://stream.pikanal.rs/pikanal/pgm.m3u8?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="RS" tvg-logo="" group-title="Undefined",Toxic Rap (1080p)
+http://82.118.0.14:8000/play/7/index.m3u8?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="RS" tvg-logo="https://i.imgur.com/8wbTnNW.png" group-title="Music;Undefined",ZICO TV (1080p)
+http://77.83.120.135:8001/play/a0wn?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="RS" tvg-logo="" group-title="Undefined",ZICO TV (1080p)
+http://77.83.120.135:8001/play/a049?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="RS" tvg-logo="" group-title="Undefined",ZICO TV (1080p)
+http://77.83.120.135:8001/play/a161?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="AL;AM;BG;DK;FI;FR;GE;DE;GR;HU;IT;NO;PT;RS;ES;SE;CH;TR;UA" tvg-logo="https://i.imgur.com/pUcV46F.png" group-title="Undefined;FRANCE;ITALY;SPAIN",НТВ Мир
+http://stream02.vnet.am/HTB/mono.m3u8?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="AL;AM;BG;DK;FI;FR;GE;DE;GR;HU;IT;NO;PT;RS;ES;SE;CH;TR;UA" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/RTR-Planeta_Logo.svg/512px-RTR-Planeta_Logo.svg.png" group-title="General;FRANCE;ITALY;SPAIN",РТР Планета Евро
+https://player.smotrim.ru/iframe/stream/live_id/4941?checkedby:iptvcat.net
+#EXTM3U
+#EXTINF:0 tvg-country="RS" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/24Kitchen.png/512px-24Kitchen.png" group-title="Undefined",24Kitchen Serbia (720p)
+http://91.132.74.5:8000/play/a00a?checkedby:iptvcat.com
+https://m3u.royiptv.com/channels/country/rs.m3u
+#EXTM3U
+#EXTINF:0,B92
+http://edge1.volim.tv/live/b92.stream/playlist.m3u8?hash=49c26f175dcc3d897eef6ae7f4f321106f09fe39
+#EXTINF:0,HAPPY
+http://edge1.volim.tv/live/happy.stream/playlist.m3u8?hash=49c26f175dcc3d897eef6ae7f4f321106f09fe39
+#EXTINF:0,HRT 1
+http://edge1.volim.tv/live/hrt_1.stream/playlist.m3u8?hash=49c26f175dcc3d897eef6ae7f4f321106f09fe39
+#EXTINF:0,HRT 2
+http://edge1.volim.tv/live/hrt_2.stream/playlist.m3u8?hash=49c26f175dcc3d897eef6ae7f4f321106f09fe39
+#EXTINF:0,KANAL 3
+http://edge1.volim.tv/live/kanal_3.stream/playlist.m3u8?hash=49c26f175dcc3d897eef6ae7f4f321106f09fe39
+#EXTINF:0,SKY PLUS
+http://edge1.volim.tv/live/sky_plus.stream/playlist.m3u8?hash=49c26f175dcc3d897eef6ae7f4f321106f09fe39
+#EXTINF:0,PALMA PLUS
+http://edge1.volim.tv/live/palma.stream/playlist.m3u8?hash=49c26f175dcc3d897eef6ae7f4f321106f09fe39
+#EXTINF:0,PINK
+http://edge1.volim.tv/live/pink.stream/playlist.m3u8?hash=49c26f175dcc3d897eef6ae7f4f321106f09fe39
+#EXTINF:0,PRVA TV
+http://edge1.volim.tv/live/prva.stream/playlist.m3u8?hash=49c26f175dcc3d897eef6ae7f4f321106f09fe39
+#EXTINF:0,RTCG SAT
+http://edge1.volim.tv/live/rtcg.stream/playlist.m3u8?hash=49c26f175dcc3d897eef6ae7f4f321106f09fe39
+#EXTINF:0,RTRS
+http://edge1.volim.tv/live/rtrs.stream/playlist.m3u8?hash=49c26f175dcc3d897eef6ae7f4f321106f09fe39
+#EXTINF:0,RTS 1
+http://edge1.volim.tv/live/rts_1.stream/playlist.m3u8?hash=49c26f175dcc3d897eef6ae7f4f321106f09fe39
+#EXTINF:0,RTS 2
+http://edge1.volim.tv/live/rts_2.stream/playlist.m3u8?hash=49c26f175dcc3d897eef6ae7f4f321106f09fe39
+#EXTINF:0,RTV 1
+http://edge1.volim.tv/live/rtv_1.stream/playlist.m3u8?hash=49c26f175dcc3d897eef6ae7f4f321106f09fe39
+#EXTINF:0,SOS
+http://edge1.volim.tv1/live/sos.stream/playlist.m3u8?hash=49c26f175dcc3d897eef6ae7f4f321106f09fe39
+#EXTINF:0,STUDIO B
+http://edge1.volim.tv/live/studio_b.stream/playlist.m3u8?hash=49c26f175dcc3d897eef6ae7f4f321106f09fe39
+Pink Srbija
+ffrt http://webtropia1.narodnatv.info:80/live?channelId=283&uid=3699&deviceUser=stalkerNARODNATV&devicePass=fm9ytmf7q
+Pink 2
+ffrt http://server507.dyndns.biz:80/live?channelId=157&uid=3699&deviceUser=stalkerNARODNATV&devicePass=fm9ytmf7q
+PINK 3
+ffrt http://srv2.narodnatv.info:80/live?channelId=128&uid=3699&deviceUser=stalkerNARODNATV&devicePass=fm9ytmf7q
+Pink M
+ffrt http://server507.dyndns.biz:80/live?channelId=23&uid=3699&deviceUser=stalkerNARODNATV&devicePass=fm9ytmf7q
+Pink Film
+ffrt http://sall2all.homelinux.net:12412/live?channelId=331&uid=3699&deviceUser=stalkerNARODNATV&devicePass=fm9ytmf7q
+Pink Premium
+ffrt http://sall2all.homelinux.net:12412/live?channelId=39&uid=3699&deviceUser=stalkerNARODNATV&devicePass=fm9ytmf7q
+Pink Western
+ffrt http://server507.dyndns.biz:80/live?channelId=10&uid=3699&deviceUser=stalkerNARODNATV&devicePass=fm9ytmf7q
+Pink Action 2
+ffrt http://srv2.narodnatv.info:80/live?channelId=26&uid=3699&deviceUser=stalkerNARODNATV&devicePass=fm9ytmf7q
+Pink Action 3
+ffrt http://srv2.narodnatv.info:80/live?channelId=27&uid=3699&deviceUser=stalkerNARODNATV&devicePass=fm9ytmf7q
+Pink Music
+ffrt http://server507.dyndns.biz:80/live?channelId=177&uid=3699&deviceUser=stalkerNARODNATV&devicePass=fm9ytmf7q
+Pink Music 2
+ffrt http://srv2.narodnatv.info:80/live?channelId=13&uid=3699&deviceUser=stalkerNARODNATV&devicePass=fm9ytmf7q
+Pink Folk
+ffrt http://srv2.narodnatv.info:80/live?channelId=24&uid=3699&deviceUser=stalkerNARODNATV&devicePass=fm9ytmf7q
+Pink Folk 2
+ffrt http://srv2.narodnatv.info:80/live?channelId=25&uid=3699&deviceUser=stalkerNARODNATV&devicePass=fm9ytmf7q
+Pink Rock
+ffrt http://srv2.narodnatv.info:80/live?channelId=28&uid=3699&deviceUser=stalkerNARODNATV&devicePass=fm9ytmf7q
+Pink Music 3
+ffrt http://srv2.narodnatv.info:80/live?channelId=37&uid=3699&deviceUser=stalkerNARODNATV&devicePass=fm9ytmf7q
+Pink Bravo
+ffrt http://srv2.narodnatv.info:80/live?channelId=45&uid=3699&deviceUser=stalkerNARODNATV&devicePass=fm9ytmf7q
+http://sansat.net:88/sonewhrab/jgjdh3767DJSHBNdghsSDJ236/97089
+#EXTINF:-1 ,RS: RTS SVET
+http://sansat.net:88/sonewhrab/jgjdh3767DJSHBNdghsSDJ236/97090
+#EXTINF:-1 ,RS: RTS 1 FHD
+http://sansat.net:88/sonewhrab/jgjdh3767DJSHBNdghsSDJ236/97091
+#EXTINF:-1 ,RS: RTS 1
+http://sansat.net:88/sonewhrab/jgjdh3767DJSHBNdghsSDJ236/97092
+#EXTINF:-1 ,RS: RTS 2
+http://sansat.net:88/sonewhrab/jgjdh3767DJSHBNdghsSDJ236/97093
+#EXTINF:-1 ,RS: RTS 3
+http://sansat.net:88/sonewhrab/jgjdh3767DJSHBNdghsSDJ236/97094
+#EXTINF:-1 ,RS: PRVA HD
+http://sansat.net:88/sonewhrab/jgjdh3767DJSHBNdghsSDJ236/97095
+#EXTINF:-1 ,RS: PRVA
+http://sansat.net:88/sonewhrab/jgjdh3767DJSHBNdghsSDJ236/97096
+#EXTINF:-1 ,RS: PRVA PLUS
+http://sansat.net:88/sonewhrab/jgjdh3767DJSHBNdghsSDJ236/97097
+#EXTINF:-1 ,RS: PRVA WORLD
+http://sansat.net:88/sonewhrab/jgjdh3767DJSHBNdghsSDJ236/97098
+#EXTINF:-1 ,RS: PRVA MAX
+http://sansat.net:88/sonewhrab/jgjdh3767DJSHBNdghsSDJ236/97099
+#EXTINF:-1 ,RS: PRVA KICK
+http://sansat.net:88/sonewhrab/jgjdh3767DJSHBNdghsSDJ236/97101
+#EXTINF:-1 ,RS: PRVA FILES TEST
+http://sansat.net:88/sonewhrab/jgjdh3767DJSHBNdghsSDJ236/97102
+#EXTINF:-1 ,RS: N1 SRBIJA
+http://sansat.net:88/sonewhrab/jgjdh3767DJSHBNdghsSDJ236/97103
+#EXTINF:-1 ,RS: HAPPY TV
+http://sansat.net:88/sonewhrab/jgjdh3767DJSHBNdghsSDJ236/97104
+#EXTINF:-1 ,RS: HAPPY TV PAROVI LIVE
+http://sansat.net:88/sonewhrab/jgjdh3767DJSHBNdghsSDJ236/97105
+#EXTINF:-1 ,RS: ZADRUGA UZIVO 1
+http://sansat.net:88/sonewhrab/jgjdh3767DJSHBNdghsSDJ236/97106
+#EXTINF:-1 ,RS: ZADRUGA UZIVO 2
+http://sansat.net:88/sonewhrab/jgjdh3767DJSHBNdghsSDJ236/97107
+#EXTINF:-1 ,RS: ZADRUGA UZIVO 3
+http://sansat.net:88/sonewhrab/jgjdh3767DJSHBNdghsSDJ236/97108
+#EXTINF:-1 ,RS: NOVA S
+http://sansat.net:88/sonewhrab/jgjdh3767DJSHBNdghsSDJ236/97109
+#EXTINF:-1 ,RS: RTS ZIVOT
+http://sansat.net:88/sonewhrab/jgjdh3767DJSHBNdghsSDJ236/97110
+#EXTINF:-1 ,RS: RTS MUZIKA
+http://sansat.net:88/sonewhrab/jgjdh3767DJSHBNdghsSDJ236/97112
+#EXTINF:-1 ,RS: RTS KOLO
+http://sansat.net:88/sonewhrab/jgjdh3767DJSHBNdghsSDJ236/97113
+#EXTINF:-1 ,RS: RTS DRAMA
+http://sansat.net:88/sonewhrab/jgjdh3767DJSHBNdghsSDJ236/97114
+#EXTINF:-1 ,RS: RTS POLETARAC
+http://sansat.net:88/sonewhrab/jgjdh3767DJSHBNdghsSDJ236/97115
+#EXTINF:-1 ,RS: SANDZAK TV
+http://sansat.net:88/sonewhrab/jgjdh3767DJSHBNdghsSDJ236/97116
+#EXTINF:-1 ,RS: NOVI PAZAR
+http://sansat.net:88/sonewhrab/jgjdh3767DJSHBNdghsSDJ236/97118
+#EXTINF:-1 ,RS: MLAVA TV
+http://sansat.net:88/sonewhrab/jgjdh3767DJSHBNdghsSDJ236/97119
+#EXTINF:-1 ,RS: BELLE AMIE
+http://sansat.net:88/sonewhrab/jgjdh3767DJSHBNdghsSDJ236/97120
+#EXTINF:-1 ,RS: NOVA M
+http://sansat.net:88/sonewhrab/jgjdh3767DJSHBNdghsSDJ236/97121
+#EXTINF:-1 ,RS: KCN 2
+http://sansat.net:88/sonewhrab/jgjdh3767DJSHBNdghsSDJ236/97122
+#EXTINF:-1 ,RS: KCN 1
+http://sansat.net:88/sonewhrab/jgjdh3767DJSHBNdghsSDJ236/97123
+#EXTINF:-1 ,RS: PALMA PLUS
+http://sansat.net:88/sonewhrab/jgjdh3767DJSHBNdghsSDJ236/97124
+#EXTINF:-1 ,RS: RTK
+http://sansat.net:88/sonewhrab/jgjdh3767DJSHBNdghsSDJ236/97125
+#EXTM3U
+#EXTINF:0 tvg-id="RTS1.rs" group-title="Channels",RTS 1
+http://176.67.211.6:15000/udp/239.1.1.1:22001
+#EXTINF:0 tvg-id="RTS2.rs" group-title="Channels",RTS 2
+http://176.67.211.6:15000/udp/239.1.1.2:22002
+#EXTINF:0 tvg-id="RTS3.rs" group-title="Channels",RTS 3
+http://176.67.211.6:15000/udp/239.1.1.3:22003
+#EXTINF:0 tvg-id="RTSHD.rs" group-title="Channels",RTS HD
+http://176.67.211.6:15000/udp/239.1.1.4:22004
+#EXTINF:0 tvg-id="o2tv" group-title="Channels",O2.TV
+http://176.67.211.6:15000/udp/239.1.1.5:22005
+#EXTINF:0 tvg-id="Prva.rs" group-title="Channels",PRVA
+http://176.67.211.6:15000/udp/239.1.1.6:22006
+#EXTINF:0 tvg-id="TVPINK.rs" group-title="Channels",PINK
+http://176.67.211.6:15000/udp/239.1.1.7:22007
+#EXTINF:0 tvg-id="happytv.sr" group-title="Channels",HAPPY
+http://176.67.211.6:15000/udp/239.1.1.8:22008
+#EXTINF:0 tvg-id="ext" group-title="Channels",TV BELLE AMIE
+http://176.67.211.6:15000/udp/239.1.1.9:22009
+#EXTINF:0 tvg-id="NTV.uk" group-title="Channels",NTV
+http://176.67.211.6:15000/udp/239.1.1.10:22010
+#EXTINF:0 tvg-id="ext" group-title="Channels",N1 Srb HD
+http://176.67.211.6:15000/udp/239.1.1.11:22011
+#EXTINF:0 tvg-id="studio-b-yu.sr" group-title="Channels",Studio B
+http://176.67.211.6:15000/udp/239.1.1.12:22012
+#EXTINF:0 tvg-id="GrandNarodna.rs" group-title="Channels",Grand
+http://176.67.211.6:15000/udp/239.1.1.13:22013
+#EXTINF:0 tvg-id="PrvaPlus.rs" group-title="Channels",Prva Plus
+http://176.67.211.6:15000/udp/239.1.1.14:22014
+#EXTINF:0 tvg-id="ext" group-title="Channels",Srpska Naucna TV
+http://176.67.211.6:15000/udp/239.1.1.15:22015
+#EXTINF:0 tvg-id="ext" group-title="Channels",RTL Croatia World
+http://176.67.211.6:15000/udp/239.1.1.16:22016
+#EXTINF:0 tvg-id="ext" group-title="Channels",CineStar SRB
+http://176.67.211.6:15000/udp/239.1.1.18:22018
+#EXTINF:0 tvg-id="ext" group-title="Channels",CineStar A&T SRB
+http://176.67.211.6:15000/udp/239.1.1.19:22019
+#EXTINF:0 tvg-id="ext" group-title="Channels",CineStar Fantasy
+http://176.67.211.6:15000/udp/239.1.1.20:22020
+#EXTINF:0 tvg-id="ext" group-title="Channels",RTV Novi Pazar
+http://176.67.211.6:15000/udp/239.1.1.21:22021
+#EXTINF:0 tvg-id="ext" group-title="Channels",Novi kanal
+http://176.67.211.6:15000/udp/239.1.1.22:22022
+#EXTINF:0 tvg-id="RTV1.rs" group-title="Channels",RTV 1
+http://176.67.211.6:15000/udp/239.1.1.23:22023
+#EXTINF:0 tvg-id="RTV2.rs" group-title="Channels",RTV 2
+http://176.67.211.6:15000/udp/239.1.1.24:22024
+#EXTINF:0 tvg-id="ext" group-title="Channels",Novi kanal
+http://176.67.211.6:15000/udp/239.1.1.25:22025
+#EXTINF:0 tvg-id="Eurochannel.pl" group-title="Channels",Eurochannel HD
+http://176.67.211.6:15000/udp/239.1.1.26:22026
+#EXTINF:0 tvg-id="ext" group-title="Channels",Novi kanal
+http://176.67.211.6:15000/udp/239.1.1.27:22027
+#EXTINF:0 tvg-id="ext" group-title="Channels",TV Bor
+http://176.67.211.6:15000/udp/239.1.1.28:22028
+#EXTINF:0 tvg-id="RussiaToday.uk" group-title="Channels",RT HD
+http://176.67.211.6:15000/udp/239.1.1.29:22029
+#EXTINF:0 tvg-id="RTRS.rs" group-title="Channels",RTRS
+http://176.67.211.6:15000/udp/239.1.1.31:22031
+#EXTINF:0 tvg-id="bn-sat.ba" group-title="Channels",BN SAT
+http://176.67.211.6:15000/udp/239.1.1.32:22032
+#EXTINF:0 tvg-id="RTRSPlus.ba" group-title="Channels",RTRS plus
+http://176.67.211.6:15000/udp/239.1.1.33:22033
+#EXTINF:0 tvg-id="ext" group-title="Channels",BK TV HD
+http://176.67.211.6:15000/udp/239.1.1.34:22034
+#EXTINF:0 tvg-id="BNMusic.ba" group-title="Channels",BN Music
+http://176.67.211.6:15000/udp/239.1.1.35:22035
+#EXTINF:0 tvg-id="ext" group-title="Channels",KCN
+http://176.67.211.6:15000/udp/239.1.1.36:22036
+#EXTINF:0 tvg-id="ext" group-title="Channels",Kopernikus
+http://176.67.211.6:15000/udp/239.1.1.37:22037
+#EXTINF:0 tvg-id="ext" group-title="Channels",Svet Plus
+http://176.67.211.6:15000/udp/239.1.1.38:22038
+#EXTINF:0 tvg-id="ext" group-title="Channels",Action Plus HD
+http://176.67.211.6:15000/udp/239.1.1.39:22039
+#EXTINF:0 tvg-id="ext" group-title="Channels",TV Vranje
+http://176.67.211.6:15000/udp/239.1.1.40:22040
+#EXTINF:0 tvg-id="ext" group-title="Channels",TV Pirot
+http://176.67.211.6:15000/udp/239.1.1.41:22041
+#EXTINF:0 tvg-id="ext" group-title="Channels",NOVOSADSKA TV
+http://176.67.211.6:15000/udp/239.1.1.43:22043
+#EXTINF:0 tvg-id="ext" group-title="Channels",TV Istok
+http://176.67.211.6:15000/udp/239.1.1.44:22044
+#EXTINF:0 tvg-id="ext" group-title="Channels",T1
+http://176.67.211.6:15000/udp/239.1.1.45:22045
+#EXTINF:0 tvg-id="HAYATTVBIH.hr" group-title="Channels",HAYAT HD
+http://176.67.211.6:15000/udp/239.1.1.46:22046
+#EXTINF:0 tvg-id="HayatFolk.hr" group-title="Channels",HAYAT FOLK
+http://176.67.211.6:15000/udp/239.1.1.47:22047
+#EXTINF:0 tvg-id="hayat-plus.ba" group-title="Channels",HAYAT PLUS
+http://176.67.211.6:15000/udp/239.1.1.48:22048
+#EXTINF:0 tvg-id="HayatMusic.ba" group-title="Channels",HAYAT MUSIC
+http://176.67.211.6:15000/udp/239.1.1.49:22049
+#EXTINF:0 tvg-id="ext" group-title="Channels",HRT-TV1
+http://176.67.211.6:15000/udp/239.1.1.50:22050
+#EXTINF:0 tvg-id="ext" group-title="Channels",HRT-TV2
+http://176.67.211.6:15000/udp/239.1.1.51:22051
+#EXTINF:0 tvg-id="ext" group-title="Channels",HRT-TV3
+http://176.67.211.6:15000/udp/239.1.1.52:22052
+#EXTINF:0 tvg-id="ext" group-title="Channels",HRT-TV4
+http://176.67.211.6:15000/udp/239.1.1.53:22053
+#EXTINF:0 tvg-id="Jednotka.sk" group-title="Channels",SLO-TV1
+http://176.67.211.6:15000/udp/239.1.1.54:22054
+#EXTINF:0 tvg-id="STV2.uk" group-title="Channels",SLO-TV2
+http://176.67.211.6:15000/udp/239.1.1.55:22055
+#EXTINF:0 tvg-id="ext" group-title="Channels",SLO-TV3
+http://176.67.211.6:15000/udp/239.1.1.56:22056
+#EXTINF:0 tvg-id="ext" group-title="Channels",Novi kanal
+http://176.67.211.6:15000/udp/239.1.1.57:22057
+#EXTINF:0 tvg-id="EuroNews.al" group-title="Channels",Euronews
+http://176.67.211.6:15000/udp/239.1.1.58:22058
+#EXTINF:0 tvg-id="ARTE.de" group-title="Channels",Arte HD
+http://176.67.211.6:15000/udp/239.1.1.59:22059
+#EXTINF:0 tvg-id="rt-doc" group-title="Channels",RT Doc
+http://176.67.211.6:15000/udp/239.1.1.60:22060
+#EXTINF:0 tvg-id="ext" group-title="Channels",Discovery Serbia
+http://176.67.211.6:15000/udp/239.1.1.61:22061
+#EXTINF:0 tvg-id="AnimalPlanetHD.al" group-title="Channels",Animal Planet
+http://176.67.211.6:15000/udp/239.1.1.62:22062
+#EXTINF:0 tvg-id="ext" group-title="Channels",Novi kanal
+http://176.67.211.6:15000/udp/239.1.1.63:22063
+#EXTINF:0 tvg-id="natgeo" group-title="Channels",Nat Geographic
+http://176.67.211.6:15000/udp/239.1.1.64:22064
+#EXTINF:0 tvg-id="NatGeoWild.uk" group-title="Channels",Nat Geo Wild HD
+http://176.67.211.6:15000/udp/239.1.1.65:22065
+#EXTINF:0 tvg-id="ext" group-title="Channels",Novi kanal
+http://176.67.211.6:15000/udp/239.1.1.66:22066
+#EXTINF:0 tvg-id="MTVRocks.eu" group-title="Channels",MTV Rocks
+http://176.67.211.6:15000/udp/239.1.1.67:22067
+#EXTINF:0 tvg-id="CapitalTV.uk" group-title="Channels",CAPITAL TV
+http://176.67.211.6:15000/udp/239.1.1.68:22068
+#EXTINF:0 tvg-id="ext" group-title="Channels",Novi kanal
+http://176.67.211.6:15000/udp/239.1.1.69:22069
+#EXTINF:0 tvg-id="ext" group-title="Channels",Heart TV
+http://176.67.211.6:15000/udp/239.1.1.70:22070
+#EXTINF:0 tvg-id="VH1Classic.eu" group-title="Channels",VH1 Classic
+http://176.67.211.6:15000/udp/239.1.1.71:22071
+#EXTINF:0 tvg-id="CityTV.bg" group-title="Channels",City TV
+http://176.67.211.6:15000/udp/239.1.1.72:22072
+#EXTINF:0 tvg-id="ext" group-title="Channels",Novi kanal
+http://176.67.211.6:15000/udp/239.1.1.73:22073
+#EXTINF:0 tvg-id="MTVHits.uk" group-title="Channels",MTV Hits
+http://176.67.211.6:15000/udp/239.1.1.74:22074
+#EXTINF:0 tvg-id="MusicChannel.ro" group-title="Channels",Music Channel
+http://176.67.211.6:15000/udp/239.1.1.75:22075
+#EXTINF:0 tvg-id="ext" group-title="Channels",Novi kanal
+http://176.67.211.6:15000/udp/239.1.1.76:22076
+#EXTINF:0 tvg-id="ClublandTV.uk" group-title="Channels",Clubland TV
+http://176.67.211.6:15000/udp/239.1.1.77:22077
+#EXTINF:0 tvg-id="MTVEurope.cz" group-title="Channels",MTV Europe
+http://176.67.211.6:15000/udp/239.1.1.78:22078
+#EXTINF:0 tvg-id="VH1.eur" group-title="Channels",VH1
+http://176.67.211.6:15000/udp/239.1.1.79:22079
+#EXTINF:0 tvg-id="MTVDance.uk" group-title="Channels",MTV Dance
+http://176.67.211.6:15000/udp/239.1.1.80:22080
+#EXTINF:0 tvg-id="MTVLiveHD.al" group-title="Channels",MTV Live  HD
+http://176.67.211.6:15000/udp/239.1.1.81:22081
+#EXTINF:0 tvg-id="ext" group-title="Channels",Novi kanal
+http://176.67.211.6:15000/udp/239.1.1.82:22082
+#EXTINF:0 tvg-id="Nickelodeon.uk" group-title="Channels",Nickelodeon
+http://176.67.211.6:15000/udp/239.1.1.83:22083
+#EXTINF:0 tvg-id="NickelodeonHD.al" group-title="Channels",Nickelodeon HD
+http://176.67.211.6:15000/udp/239.1.1.84:22084
+#EXTINF:0 tvg-id="ext" group-title="Channels",Nick_Jr.
+http://176.67.211.6:15000/udp/239.1.1.85:22085
+#EXTINF:0 tvg-id="PINKKids.rs" group-title="Channels",Pink Kids
+http://176.67.211.6:15000/udp/239.1.1.86:22086
+#EXTINF:0 tvg-id="ext" group-title="Channels",DISNEY ME
+http://176.67.211.6:15000/udp/239.1.1.87:22087
+#EXTINF:0 tvg-id="Minimax.rs" group-title="Channels",Minimax
+http://176.67.211.6:15000/udp/239.1.1.88:22088
+#EXTINF:0 tvg-id="ext" group-title="Channels",DISJ1_CEMA
+http://176.67.211.6:15000/udp/239.1.1.89:22089
+#EXTINF:0 tvg-id="BabyTV.al" group-title="Channels",Baby TV
+http://176.67.211.6:15000/udp/239.1.1.90:22090
+#EXTINF:0 tvg-id="DuckTV.hr" group-title="Channels",ducktv
+http://176.67.211.6:15000/udp/239.1.1.91:22091
+#EXTINF:0 tvg-id="ext" group-title="Channels",Novi kanal
+http://176.67.211.6:15000/udp/239.1.1.92:22092
+#EXTINF:0 tvg-id="Hayatovci.hr" group-title="Channels",HAYATOVCI
+http://176.67.211.6:15000/udp/239.1.1.93:22093
+#EXTINF:0 tvg-id="ext" group-title="Channels",Novi kanal
+http://176.67.211.6:15000/udp/239.1.1.94:22094
+#EXTINF:0 tvg-id="PinkSuperKids.rs" group-title="Channels",Pink Super Kids
+http://176.67.211.6:15000/udp/239.1.1.95:22095
+#EXTINF:0 tvg-id="jimjam" group-title="Channels",JimJam EMEA
+http://176.67.211.6:15000/udp/239.1.1.96:22096
+#EXTINF:0 tvg-id="boec" group-title="Channels",Ginx
+http://176.67.211.6:15000/udp/239.1.1.98:22098
+#EXTINF:0 tvg-id="History.uk" group-title="Channels",History Channel
+http://176.67.211.6:15000/udp/239.1.1.99:22099
+#EXTINF:0 tvg-id="ext" group-title="Channels",DisChan
+http://176.67.211.6:15000/udp/239.1.1.101:22101
+#EXTINF:0 tvg-id="ext" group-title="Channels",Novi kanal
+http://176.67.211.6:15000/udp/239.1.1.102:22102
+#EXTINF:0 tvg-id="Cinemania.hr" group-title="Channels",Cinemania
+http://176.67.211.6:15000/udp/239.1.1.103:22103
+#EXTINF:0 tvg-id="ext" group-title="Channels",Outdoor Channel EMEA HD
+http://176.67.211.6:15000/udp/239.1.1.104:22104
+#EXTINF:0 tvg-id="Fightnetwork.gr" group-title="Channels",Fight Network
+http://176.67.211.6:15000/udp/239.1.1.105:22105
+#EXTINF:0 tvg-id="extreme-sports" group-title="Channels",Extreme EMEA
+http://176.67.211.6:15000/udp/239.1.1.106:22106
+#EXTINF:0 tvg-id="ext" group-title="Channels",Novi kanal
+http://176.67.211.6:15000/udp/239.1.1.107:22107
+#EXTINF:0 tvg-id="SOS.hr" group-title="Channels",SOS Kanal
+http://176.67.211.6:15000/udp/239.1.1.108:22108
+#EXTINF:0 tvg-id="ArenaSport1.hr" group-title="Channels",Arena Sport 1
+http://176.67.211.6:15000/udp/239.1.1.109:22109
+#EXTINF:0 tvg-id="ArenaSport2.hr" group-title="Channels",Arena Sport 2
+http://176.67.211.6:15000/udp/239.1.1.110:22110
+#EXTINF:0 tvg-id="ArenaSport3.hr" group-title="Channels",Arena Sport 3
+http://176.67.211.6:15000/udp/239.1.1.111:22111
+#EXTINF:0 tvg-id="ArenaSport4.rs" group-title="Channels",Arena Sport 4
+http://176.67.211.6:15000/udp/239.1.1.112:22112
+#EXTINF:0 tvg-id="SuperTennis.it" group-title="Channels",SUPERTENNIS HD
+http://176.67.211.6:15000/udp/239.1.1.113:22113
+#EXTINF:0 tvg-id="ext" group-title="Channels",ESP2 Int’l
+http://176.67.211.6:15000/udp/239.1.1.115:22115
+#EXTINF:0 tvg-id="Eurosport2.uk" group-title="Channels",Eurosport 2 HD
+http://176.67.211.6:15000/udp/239.1.1.116:22116
+#EXTINF:0 tvg-id="FoxLife.al" group-title="Channels",Fox Life
+http://176.67.211.6:15000/udp/239.1.1.117:22117
+#EXTINF:0 tvg-id="Fox.al" group-title="Channels",FOX
+http://176.67.211.6:15000/udp/239.1.1.118:22118
+#EXTINF:0 tvg-id="FoxCrime.al" group-title="Channels",Fox Crime
+http://176.67.211.6:15000/udp/239.1.1.119:22119
+#EXTINF:0 tvg-id="FoxMovies.pt" group-title="Channels",FOX Movies
+http://176.67.211.6:15000/udp/239.1.1.120:22120
+#EXTINF:0 tvg-id="ext" group-title="Channels",Novi kanal
+http://176.67.211.6:15000/udp/239.1.1.121:22121
+#EXTINF:0 tvg-id="SciFi.pl" group-title="Channels",SciFi Universal
+http://176.67.211.6:15000/udp/239.1.1.122:22122
+#EXTINF:0 tvg-id="Diva.svn" group-title="Channels",Diva
+http://176.67.211.6:15000/udp/239.1.1.123:22123
+#EXTINF:0 tvg-id="ext" group-title="Channels",Fine Living SD EMEA
+http://176.67.211.6:15000/udp/239.1.1.124:22124
+#EXTINF:0 tvg-id="ComedyCentralExtra.uk" group-title="Channels",Comedy Central Extra
+http://176.67.211.6:15000/udp/239.1.1.125:22125
+#EXTINF:0 tvg-id="ext" group-title="Channels",Novi kanal
+http://176.67.211.6:15000/udp/239.1.1.126:22126
+#EXTINF:0 tvg-id="PinkKuvar.rs" group-title="Channels",Pink Kuvar
+http://176.67.211.6:15000/udp/239.1.1.127:22127
+#EXTINF:0 tvg-id="24Kitchen.pt" group-title="Channels",24Kitchen HD
+http://176.67.211.6:15000/udp/239.1.1.128:22128
+#EXTINF:0 tvg-id="ext" group-title="Channels",Food Network SD EMEA
+http://176.67.211.6:15000/udp/239.1.1.129:22129
+#EXTINF:0 tvg-id="FashionOne.uk" group-title="Channels",Fashion One
+http://176.67.211.6:15000/udp/239.1.1.130:22130
+#EXTINF:0 tvg-id="ext" group-title="Channels",Novi kanal
+http://176.67.211.6:15000/udp/239.1.1.131:22131
+#EXTINF:0 tvg-id="ext" group-title="Channels",Reality EMEA 1
+http://176.67.211.6:15000/udp/239.1.1.132:22132
+#EXTINF:0 tvg-id="ext" group-title="Channels",Novi kanal —
+http://176.67.211.6:15000/udp/239.1.1.133:22133
+#EXTINF:0 tvg-id="TLC.uk" group-title="Channels",TLC
+http://176.67.211.6:15000/udp/239.1.1.134:22134
+#EXTINF:0 tvg-id="ShortsTV.be" group-title="Channels",ShortsTV HD
+http://176.67.211.6:15000/udp/239.1.1.135:22135
+#EXTINF:0 tvg-id="AXNAdria.rs" group-title="Channels",AXN Adria
+http://176.67.211.6:15000/udp/239.1.1.136:22136
+#EXTINF:0 tvg-id="ext" group-title="Channels",Novi kanal
+http://176.67.211.6:15000/udp/239.1.1.137:22137
+#EXTINF:0 tvg-id="ext" group-title="Channels",Novi kanal
+http://176.67.211.6:15000/udp/239.1.1.138:22138
+#EXTINF:0 tvg-id="ext" group-title="Channels",Novi kanal
+http://176.67.211.6:15000/udp/239.1.1.139:22139
+#EXTINF:0 tvg-id="TraceSport.uk" group-title="Channels",Trace Sport Stars HD
+http://176.67.211.6:15000/udp/239.1.1.140:22140
+#EXTINF:0 tvg-id="da_vinci-rus" group-title="Channels",DaVinci Learning
+http://176.67.211.6:15000/udp/239.1.1.141:22141
+#EXTINF:0 tvg-id="history" group-title="Channels",Viasat History (FSS)
+http://176.67.211.6:15000/udp/239.1.1.143:22143
+#EXTINF:0 tvg-id="viasat-nature" group-title="Channels",Viasat Nature East FSS
+http://176.67.211.6:15000/udp/239.1.1.144:22144
+#EXTINF:0 tvg-id="ext" group-title="Channels",TV1000 Balkan FSS
+http://176.67.211.6:15000/udp/239.1.1.145:22145
+#EXTINF:0 tvg-id="TVPINK.rs" group-title="Channels",Pink
+http://176.67.211.6:15000/udp/239.1.1.146:22146
+#EXTINF:0 tvg-id="Pink2.hr" group-title="Channels",Pink 2
+http://176.67.211.6:15000/udp/239.1.1.147:22147
+#EXTINF:0 tvg-id="Pink3.rs" group-title="Channels",Pink 3 Info
+http://176.67.211.6:15000/udp/239.1.1.148:22148
+#EXTINF:0 tvg-id="PinkExtra.svn" group-title="Channels",Pink Extra
+http://176.67.211.6:15000/udp/239.1.1.149:22149
+#EXTINF:0 tvg-id="PinkM.rs" group-title="Channels",Pink M
+http://176.67.211.6:15000/udp/239.1.1.150:22150
+#EXTINF:0 tvg-id="PINKBH.hr" group-title="Channels",Pink BH
+http://176.67.211.6:15000/udp/239.1.1.151:22151
+#EXTINF:0 tvg-id="ext" group-title="Channels",Novi kanal
+http://176.67.211.6:15000/udp/239.1.1.152:22152
+#EXTINF:0 tvg-id="PinkMusic2.rs" group-title="Channels",Pink Music 2
+http://176.67.211.6:15000/udp/239.1.1.153:22153
+#EXTINF:0 tvg-id="PinkHits1.rs" group-title="Channels",Pink Hits 1
+http://176.67.211.6:15000/udp/239.1.1.154:22154
+#EXTINF:0 tvg-id="PinkHits2.rs" group-title="Channels",Pink Hits 2
+http://176.67.211.6:15000/udp/239.1.1.155:22155
+#EXTINF:0 tvg-id="PinkMusic3.rs" group-title="Channels",Bravo Music
+http://176.67.211.6:15000/udp/239.1.1.156:22156
+#EXTINF:0 tvg-id="ext" group-title="Channels",City Play
+http://176.67.211.6:15000/udp/239.1.1.157:22157
+#EXTINF:0 tvg-id="PinkFolk.svn" group-title="Channels",Pink Folk
+http://176.67.211.6:15000/udp/239.1.1.158:22158
+#EXTINF:0 tvg-id="PinkFolk2.rs" group-title="Channels",Pink Folk 2
+http://176.67.211.6:15000/udp/239.1.1.159:22159
+#EXTINF:0 tvg-id="PinkWestern.rs" group-title="Channels",Pink Western
+http://176.67.211.6:15000/udp/239.1.1.160:22160
+#EXTINF:0 tvg-id="PinkFamily.hr" group-title="Channels",Pink Family
+http://176.67.211.6:15000/udp/239.1.1.161:22161
+#EXTINF:0 tvg-id="PinkFilm.rs" group-title="Channels",Pink Film
+http://176.67.211.6:15000/udp/239.1.1.162:22162
+#EXTINF:0 tvg-id="PinkHorror.hr" group-title="Channels",Pink Horror
+http://176.67.211.6:15000/udp/239.1.1.163:22163
+#EXTINF:0 tvg-id="ext" group-title="Channels",Pink Fashion
+http://176.67.211.6:15000/udp/239.1.1.165:22165
+#EXTINF:0 tvg-id="PinkKoncert.rs" group-title="Channels",Pink Koncert
+http://176.67.211.6:15000/udp/239.1.1.166:22166
+#EXTINF:0 tvg-id="ext" group-title="Channels",Pink&Roll
+http://176.67.211.6:15000/udp/239.1.1.167:22167
+#EXTINF:0 tvg-id="ext" group-title="Channels",HA HA
+http://176.67.211.6:15000/udp/239.1.1.168:22168
+#EXTINF:0 tvg-id="ext" group-title="Channels",LOL
+http://176.67.211.6:15000/udp/239.1.1.169:22169
+#EXTINF:0 tvg-id="PinkPlus.se" group-title="Channels",Pink Plus
+http://176.67.211.6:15000/udp/239.1.1.170:22170
+#EXTINF:0 tvg-id="PinkComedy.hr" group-title="Channels",Pink Comedy
+http://176.67.211.6:15000/udp/239.1.1.171:22171
+#EXTINF:0 tvg-id="PinkCrime.rs" group-title="Channels",Pink Crime&Mystery
+http://176.67.211.6:15000/udp/239.1.1.172:22172
+#EXTINF:0 tvg-id="ext" group-title="Channels",Pink Sci-Fi&Fantasy
+http://176.67.211.6:15000/udp/239.1.1.173:22173
+#EXTINF:0 tvg-id="PinkPremium.rs" group-title="Channels",Pink Premium
+http://176.67.211.6:15000/udp/239.1.1.174:22174
+#EXTINF:0 tvg-id="PinkMovies2.rs" group-title="Channels",Pink Romance
+http://176.67.211.6:15000/udp/239.1.1.175:22175
+#EXTINF:0 tvg-id="PinkThriller.rs" group-title="Channels",Pink Thriller
+http://176.67.211.6:15000/udp/239.1.1.176:22176
+#EXTINF:0 tvg-id="PinkAction.rs" group-title="Channels",Pink Action
+http://176.67.211.6:15000/udp/239.1.1.177:22177
+#EXTINF:0 tvg-id="PinkMovies.rs" group-title="Channels",Pink Movies
+http://176.67.211.6:15000/udp/239.1.1.178:22178
+#EXTINF:0 tvg-id="PinkSerije.rs" group-title="Channels",Pink Serije
+http://176.67.211.6:15000/udp/239.1.1.179:22179
+#EXTINF:0 tvg-id="PinkWorldCinema.rs" group-title="Channels",Pink World Cinema
+http://176.67.211.6:15000/udp/239.1.1.180:22180
+#EXTINF:0 tvg-id="PinkWorld.rs" group-title="Channels",Pink World
+http://176.67.211.6:15000/udp/239.1.1.181:22181
+#EXTINF:0 tvg-id="ext" group-title="Channels",Pink Show
+http://176.67.211.6:15000/udp/239.1.1.182:22182
+#EXTINF:0 tvg-id="PinkClassic.rs" group-title="Channels",Pink Classic
+http://176.67.211.6:15000/udp/239.1.1.184:22184
+#EXTINF:0 tvg-id="ext" group-title="Channels",Pink Style
+http://176.67.211.6:15000/udp/239.1.1.185:22185
+#EXTINF:0 tvg-id="PinkPedia.rs" group-title="Channels",Pink Pedia
+http://176.67.211.6:15000/udp/239.1.1.186:22186
+#EXTINF:0 tvg-id="PinkReality.rs" group-title="Channels",Pink Reality
+http://176.67.211.6:15000/udp/239.1.1.187:22187
+#EXTINF:0 tvg-id="PinkSoap.rs" group-title="Channels",Pink Soap
+http://176.67.211.6:15000/udp/239.1.1.188:22188
+#EXTINF:0 tvg-id="PinkZabava.rs" group-title="Channels",Pink Zabava
+http://176.67.211.6:15000/udp/239.1.1.189:22189
+#EXTINF:0 tvg-id="ArenaSport5.rs" group-title="Channels",Arena Sport 5
+http://176.67.211.6:15000/udp/239.1.1.190:22190
+
+gistfile1.txt
+#EXTM3U
+#EXTINF:0 tvg-id="RTS1.rs" group-title="Channels",RTS 1
+http://176.67.211.6:15000/udp/239.1.1.1:22001
+#EXTINF:0 tvg-id="RTS2.rs" group-title="Channels",RTS 2
+http://176.67.211.6:15000/udp/239.1.1.2:22002
+#EXTINF:0 tvg-id="RTS3.rs" group-title="Channels",RTS 3
+http://176.67.211.6:15000/udp/239.1.1.3:22003
+#EXTINF:0 tvg-id="RTSHD.rs" group-title="Channels",RTS HD
+http://176.67.211.6:15000/udp/239.1.1.4:22004
+#EXTINF:0 tvg-id="o2tv" group-title="Channels",O2.TV
+http://176.67.211.6:15000/udp/239.1.1.5:22005
+#EXTINF:0 tvg-id="Prva.rs" group-title="Channels",PRVA
+http://176.67.211.6:15000/udp/239.1.1.6:22006
+#EXTINF:0 tvg-id="TVPINK.rs" group-title="Channels",PINK
+http://176.67.211.6:15000/udp/239.1.1.7:22007
+#EXTINF:0 tvg-id="happytv.sr" group-title="Channels",HAPPY
+http://176.67.211.6:15000/udp/239.1.1.8:22008
+#EXTINF:0 tvg-id="ext" group-title="Channels",TV BELLE AMIE
+http://176.67.211.6:15000/udp/239.1.1.9:22009
+#EXTINF:0 tvg-id="NTV.uk" group-title="Channels",NTV
+http://176.67.211.6:15000/udp/239.1.1.10:22010
+#EXTINF:0 tvg-id="ext" group-title="Channels",N1 Srb HD
+http://176.67.211.6:15000/udp/239.1.1.11:22011
+#EXTINF:0 tvg-id="studio-b-yu.sr" group-title="Channels",Studio B
+http://176.67.211.6:15000/udp/239.1.1.12:22012
+#EXTINF:0 tvg-id="GrandNarodna.rs" group-title="Channels",Grand
+http://176.67.211.6:15000/udp/239.1.1.13:22013
+#EXTINF:0 tvg-id="PrvaPlus.rs" group-title="Channels",Prva Plus
+http://176.67.211.6:15000/udp/239.1.1.14:22014
+#EXTINF:0 tvg-id="ext" group-title="Channels",Srpska Naucna TV
+http://176.67.211.6:15000/udp/239.1.1.15:22015
+#EXTINF:0 tvg-id="ext" group-title="Channels",RTL Croatia World
+http://176.67.211.6:15000/udp/239.1.1.16:22016
+#EXTINF:0 tvg-id="ext" group-title="Channels",CineStar SRB
+http://176.67.211.6:15000/udp/239.1.1.18:22018
+#EXTINF:0 tvg-id="ext" group-title="Channels",CineStar A&T SRB
+http://176.67.211.6:15000/udp/239.1.1.19:22019
+#EXTINF:0 tvg-id="ext" group-title="Channels",CineStar Fantasy
+http://176.67.211.6:15000/udp/239.1.1.20:22020
+#EXTINF:0 tvg-id="ext" group-title="Channels",RTV Novi Pazar
+http://176.67.211.6:15000/udp/239.1.1.21:22021
+#EXTINF:0 tvg-id="ext" group-title="Channels",Novi kanal
+http://176.67.211.6:15000/udp/239.1.1.22:22022
+#EXTINF:0 tvg-id="RTV1.rs" group-title="Channels",RTV 1
+http://176.67.211.6:15000/udp/239.1.1.23:22023
+#EXTINF:0 tvg-id="RTV2.rs" group-title="Channels",RTV 2
+http://176.67.211.6:15000/udp/239.1.1.24:22024
+#EXTINF:0 tvg-id="ext" group-title="Channels",Novi kanal
+http://176.67.211.6:15000/udp/239.1.1.25:22025
+#EXTINF:0 tvg-id="Eurochannel.pl" group-title="Channels",Eurochannel HD
+http://176.67.211.6:15000/udp/239.1.1.26:22026
+#EXTINF:0 tvg-id="ext" group-title="Channels",Novi kanal
+http://176.67.211.6:15000/udp/239.1.1.27:22027
+#EXTINF:0 tvg-id="ext" group-title="Channels",TV Bor
+http://176.67.211.6:15000/udp/239.1.1.28:22028
+#EXTINF:0 tvg-id="RussiaToday.uk" group-title="Channels",RT HD
+http://176.67.211.6:15000/udp/239.1.1.29:22029
+#EXTINF:0 tvg-id="RTRS.rs" group-title="Channels",RTRS
+http://176.67.211.6:15000/udp/239.1.1.31:22031
+#EXTINF:0 tvg-id="bn-sat.ba" group-title="Channels",BN SAT
+http://176.67.211.6:15000/udp/239.1.1.32:22032
+#EXTINF:0 tvg-id="RTRSPlus.ba" group-title="Channels",RTRS plus
+http://176.67.211.6:15000/udp/239.1.1.33:22033
+#EXTINF:0 tvg-id="ext" group-title="Channels",BK TV HD
+http://176.67.211.6:15000/udp/239.1.1.34:22034
+#EXTINF:0 tvg-id="BNMusic.ba" group-title="Channels",BN Music
+http://176.67.211.6:15000/udp/239.1.1.35:22035
+#EXTINF:0 tvg-id="ext" group-title="Channels",KCN
+http://176.67.211.6:15000/udp/239.1.1.36:22036
+#EXTINF:0 tvg-id="ext" group-title="Channels",Kopernikus
+http://176.67.211.6:15000/udp/239.1.1.37:22037
+#EXTINF:0 tvg-id="ext" group-title="Channels",Svet Plus
+http://176.67.211.6:15000/udp/239.1.1.38:22038
+#EXTINF:0 tvg-id="ext" group-title="Channels",Action Plus HD
+http://176.67.211.6:15000/udp/239.1.1.39:22039
+#EXTINF:0 tvg-id="ext" group-title="Channels",TV Vranje
+http://176.67.211.6:15000/udp/239.1.1.40:22040
+#EXTINF:0 tvg-id="ext" group-title="Channels",TV Pirot
+http://176.67.211.6:15000/udp/239.1.1.41:22041
+#EXTINF:0 tvg-id="ext" group-title="Channels",NOVOSADSKA TV
+http://176.67.211.6:15000/udp/239.1.1.43:22043
+#EXTINF:0 tvg-id="ext" group-title="Channels",TV Istok
+http://176.67.211.6:15000/udp/239.1.1.44:22044
+#EXTINF:0 tvg-id="ext" group-title="Channels",T1
+http://176.67.211.6:15000/udp/239.1.1.45:22045
+#EXTINF:0 tvg-id="HAYATTVBIH.hr" group-title="Channels",HAYAT HD
+http://176.67.211.6:15000/udp/239.1.1.46:22046
+#EXTINF:0 tvg-id="HayatFolk.hr" group-title="Channels",HAYAT FOLK
+http://176.67.211.6:15000/udp/239.1.1.47:22047
+#EXTINF:0 tvg-id="hayat-plus.ba" group-title="Channels",HAYAT PLUS
+http://176.67.211.6:15000/udp/239.1.1.48:22048
+#EXTINF:0 tvg-id="HayatMusic.ba" group-title="Channels",HAYAT MUSIC
+http://176.67.211.6:15000/udp/239.1.1.49:22049
+#EXTINF:0 tvg-id="ext" group-title="Channels",HRT-TV1
+http://176.67.211.6:15000/udp/239.1.1.50:22050
+#EXTINF:0 tvg-id="ext" group-title="Channels",HRT-TV2
+http://176.67.211.6:15000/udp/239.1.1.51:22051
+#EXTINF:0 tvg-id="ext" group-title="Channels",HRT-TV3
+http://176.67.211.6:15000/udp/239.1.1.52:22052
+#EXTINF:0 tvg-id="ext" group-title="Channels",HRT-TV4
+http://176.67.211.6:15000/udp/239.1.1.53:22053
+#EXTINF:0 tvg-id="Jednotka.sk" group-title="Channels",SLO-TV1
+http://176.67.211.6:15000/udp/239.1.1.54:22054
+#EXTINF:0 tvg-id="STV2.uk" group-title="Channels",SLO-TV2
+http://176.67.211.6:15000/udp/239.1.1.55:22055
+#EXTINF:0 tvg-id="ext" group-title="Channels",SLO-TV3
+http://176.67.211.6:15000/udp/239.1.1.56:22056
+#EXTINF:0 tvg-id="ext" group-title="Channels",Novi kanal
+http://176.67.211.6:15000/udp/239.1.1.57:22057
+#EXTINF:0 tvg-id="EuroNews.al" group-title="Channels",Euronews
+http://176.67.211.6:15000/udp/239.1.1.58:22058
+#EXTINF:0 tvg-id="ARTE.de" group-title="Channels",Arte HD
+http://176.67.211.6:15000/udp/239.1.1.59:22059
+#EXTINF:0 tvg-id="rt-doc" group-title="Channels",RT Doc
+http://176.67.211.6:15000/udp/239.1.1.60:22060
+#EXTINF:0 tvg-id="ext" group-title="Channels",Discovery Serbia
+http://176.67.211.6:15000/udp/239.1.1.61:22061
+#EXTINF:0 tvg-id="AnimalPlanetHD.al" group-title="Channels",Animal Planet
+http://176.67.211.6:15000/udp/239.1.1.62:22062
+#EXTINF:0 tvg-id="ext" group-title="Channels",Novi kanal
+http://176.67.211.6:15000/udp/239.1.1.63:22063
+#EXTINF:0 tvg-id="natgeo" group-title="Channels",Nat Geographic
+http://176.67.211.6:15000/udp/239.1.1.64:22064
+#EXTINF:0 tvg-id="NatGeoWild.uk" group-title="Channels",Nat Geo Wild HD
+http://176.67.211.6:15000/udp/239.1.1.65:22065
+#EXTINF:0 tvg-id="ext" group-title="Channels",Novi kanal
+http://176.67.211.6:15000/udp/239.1.1.66:22066
+#EXTINF:0 tvg-id="MTVRocks.eu" group-title="Channels",MTV Rocks
+http://176.67.211.6:15000/udp/239.1.1.67:22067
+#EXTINF:0 tvg-id="CapitalTV.uk" group-title="Channels",CAPITAL TV
+http://176.67.211.6:15000/udp/239.1.1.68:22068
+#EXTINF:0 tvg-id="ext" group-title="Channels",Novi kanal
+http://176.67.211.6:15000/udp/239.1.1.69:22069
+#EXTINF:0 tvg-id="ext" group-title="Channels",Heart TV
+http://176.67.211.6:15000/udp/239.1.1.70:22070
+#EXTINF:0 tvg-id="VH1Classic.eu" group-title="Channels",VH1 Classic
+http://176.67.211.6:15000/udp/239.1.1.71:22071
+#EXTINF:0 tvg-id="CityTV.bg" group-title="Channels",City TV
+http://176.67.211.6:15000/udp/239.1.1.72:22072
+#EXTINF:0 tvg-id="ext" group-title="Channels",Novi kanal
+http://176.67.211.6:15000/udp/239.1.1.73:22073
+#EXTINF:0 tvg-id="MTVHits.uk" group-title="Channels",MTV Hits
+http://176.67.211.6:15000/udp/239.1.1.74:22074
+#EXTINF:0 tvg-id="MusicChannel.ro" group-title="Channels",Music Channel
+http://176.67.211.6:15000/udp/239.1.1.75:22075
+#EXTINF:0 tvg-id="ext" group-title="Channels",Novi kanal
+http://176.67.211.6:15000/udp/239.1.1.76:22076
+#EXTINF:0 tvg-id="ClublandTV.uk" group-title="Channels",Clubland TV
+http://176.67.211.6:15000/udp/239.1.1.77:22077
+#EXTINF:0 tvg-id="MTVEurope.cz" group-title="Channels",MTV Europe
+http://176.67.211.6:15000/udp/239.1.1.78:22078
+#EXTINF:0 tvg-id="VH1.eur" group-title="Channels",VH1
+http://176.67.211.6:15000/udp/239.1.1.79:22079
+#EXTINF:0 tvg-id="MTVDance.uk" group-title="Channels",MTV Dance
+http://176.67.211.6:15000/udp/239.1.1.80:22080
+#EXTINF:0 tvg-id="MTVLiveHD.al" group-title="Channels",MTV Live  HD
+http://176.67.211.6:15000/udp/239.1.1.81:22081
+#EXTINF:0 tvg-id="ext" group-title="Channels",Novi kanal
+http://176.67.211.6:15000/udp/239.1.1.82:22082
+#EXTINF:0 tvg-id="Nickelodeon.uk" group-title="Channels",Nickelodeon
+http://176.67.211.6:15000/udp/239.1.1.83:22083
+#EXTINF:0 tvg-id="NickelodeonHD.al" group-title="Channels",Nickelodeon HD
+http://176.67.211.6:15000/udp/239.1.1.84:22084
+#EXTINF:0 tvg-id="ext" group-title="Channels",Nick_Jr.
+http://176.67.211.6:15000/udp/239.1.1.85:22085
+#EXTINF:0 tvg-id="PINKKids.rs" group-title="Channels",Pink Kids
+http://176.67.211.6:15000/udp/239.1.1.86:22086
+#EXTINF:0 tvg-id="ext" group-title="Channels",DISNEY ME
+http://176.67.211.6:15000/udp/239.1.1.87:22087
+#EXTINF:0 tvg-id="Minimax.rs" group-title="Channels",Minimax
+http://176.67.211.6:15000/udp/239.1.1.88:22088
+#EXTINF:0 tvg-id="ext" group-title="Channels",DISJ1_CEMA
+http://176.67.211.6:15000/udp/239.1.1.89:22089
+#EXTINF:0 tvg-id="BabyTV.al" group-title="Channels",Baby TV
+http://176.67.211.6:15000/udp/239.1.1.90:22090
+#EXTINF:0 tvg-id="DuckTV.hr" group-title="Channels",ducktv
+http://176.67.211.6:15000/udp/239.1.1.91:22091
+#EXTINF:0 tvg-id="ext" group-title="Channels",Novi kanal
+http://176.67.211.6:15000/udp/239.1.1.92:22092
+#EXTINF:0 tvg-id="Hayatovci.hr" group-title="Channels",HAYATOVCI
+http://176.67.211.6:15000/udp/239.1.1.93:22093
+#EXTINF:0 tvg-id="ext" group-title="Channels",Novi kanal
+http://176.67.211.6:15000/udp/239.1.1.94:22094
+#EXTINF:0 tvg-id="PinkSuperKids.rs" group-title="Channels",Pink Super Kids
+http://176.67.211.6:15000/udp/239.1.1.95:22095
+#EXTINF:0 tvg-id="jimjam" group-title="Channels",JimJam EMEA
+http://176.67.211.6:15000/udp/239.1.1.96:22096
+#EXTINF:0 tvg-id="boec" group-title="Channels",Ginx
+http://176.67.211.6:15000/udp/239.1.1.98:22098
+#EXTINF:0 tvg-id="History.uk" group-title="Channels",History Channel
+http://176.67.211.6:15000/udp/239.1.1.99:22099
+#EXTINF:0 tvg-id="ext" group-title="Channels",DisChan
+http://176.67.211.6:15000/udp/239.1.1.101:22101
+#EXTINF:0 tvg-id="ext" group-title="Channels",Novi kanal
+http://176.67.211.6:15000/udp/239.1.1.102:22102
+#EXTINF:0 tvg-id="Cinemania.hr" group-title="Channels",Cinemania
+http://176.67.211.6:15000/udp/239.1.1.103:22103
+#EXTINF:0 tvg-id="ext" group-title="Channels",Outdoor Channel EMEA HD
+http://176.67.211.6:15000/udp/239.1.1.104:22104
+#EXTINF:0 tvg-id="Fightnetwork.gr" group-title="Channels",Fight Network
+http://176.67.211.6:15000/udp/239.1.1.105:22105
+#EXTINF:0 tvg-id="extreme-sports" group-title="Channels",Extreme EMEA
+http://176.67.211.6:15000/udp/239.1.1.106:22106
+#EXTINF:0 tvg-id="ext" group-title="Channels",Novi kanal
+http://176.67.211.6:15000/udp/239.1.1.107:22107
+#EXTINF:0 tvg-id="SOS.hr" group-title="Channels",SOS Kanal
+http://176.67.211.6:15000/udp/239.1.1.108:22108
+#EXTINF:0 tvg-id="ArenaSport1.hr" group-title="Channels",Arena Sport 1
+http://176.67.211.6:15000/udp/239.1.1.109:22109
+#EXTINF:0 tvg-id="ArenaSport2.hr" group-title="Channels",Arena Sport 2
+http://176.67.211.6:15000/udp/239.1.1.110:22110
+#EXTINF:0 tvg-id="ArenaSport3.hr" group-title="Channels",Arena Sport 3
+http://176.67.211.6:15000/udp/239.1.1.111:22111
+#EXTINF:0 tvg-id="ArenaSport4.rs" group-title="Channels",Arena Sport 4
+http://176.67.211.6:15000/udp/239.1.1.112:22112
+#EXTINF:0 tvg-id="SuperTennis.it" group-title="Channels",SUPERTENNIS HD
+http://176.67.211.6:15000/udp/239.1.1.113:22113
+#EXTINF:0 tvg-id="ext" group-title="Channels",ESP2 Int’l
+http://176.67.211.6:15000/udp/239.1.1.115:22115
+#EXTINF:0 tvg-id="Eurosport2.uk" group-title="Channels",Eurosport 2 HD
+http://176.67.211.6:15000/udp/239.1.1.116:22116
+#EXTINF:0 tvg-id="FoxLife.al" group-title="Channels",Fox Life
+http://176.67.211.6:15000/udp/239.1.1.117:22117
+#EXTINF:0 tvg-id="Fox.al" group-title="Channels",FOX
+http://176.67.211.6:15000/udp/239.1.1.118:22118
+#EXTINF:0 tvg-id="FoxCrime.al" group-title="Channels",Fox Crime
+http://176.67.211.6:15000/udp/239.1.1.119:22119
+#EXTINF:0 tvg-id="FoxMovies.pt" group-title="Channels",FOX Movies
+http://176.67.211.6:15000/udp/239.1.1.120:22120
+#EXTINF:0 tvg-id="ext" group-title="Channels",Novi kanal
+http://176.67.211.6:15000/udp/239.1.1.121:22121
+#EXTINF:0 tvg-id="SciFi.pl" group-title="Channels",SciFi Universal
+http://176.67.211.6:15000/udp/239.1.1.122:22122
+#EXTINF:0 tvg-id="Diva.svn" group-title="Channels",Diva
+http://176.67.211.6:15000/udp/239.1.1.123:22123
+#EXTINF:0 tvg-id="ext" group-title="Channels",Fine Living SD EMEA
+http://176.67.211.6:15000/udp/239.1.1.124:22124
+#EXTINF:0 tvg-id="ComedyCentralExtra.uk" group-title="Channels",Comedy Central Extra
+http://176.67.211.6:15000/udp/239.1.1.125:22125
+#EXTINF:0 tvg-id="ext" group-title="Channels",Novi kanal
+http://176.67.211.6:15000/udp/239.1.1.126:22126
+#EXTINF:0 tvg-id="PinkKuvar.rs" group-title="Channels",Pink Kuvar
+http://176.67.211.6:15000/udp/239.1.1.127:22127
+#EXTINF:0 tvg-id="24Kitchen.pt" group-title="Channels",24Kitchen HD
+http://176.67.211.6:15000/udp/239.1.1.128:22128
+#EXTINF:0 tvg-id="ext" group-title="Channels",Food Network SD EMEA
+http://176.67.211.6:15000/udp/239.1.1.129:22129
+#EXTINF:0 tvg-id="FashionOne.uk" group-title="Channels",Fashion One
+http://176.67.211.6:15000/udp/239.1.1.130:22130
+#EXTINF:0 tvg-id="ext" group-title="Channels",Novi kanal
+http://176.67.211.6:15000/udp/239.1.1.131:22131
+#EXTINF:0 tvg-id="ext" group-title="Channels",Reality EMEA 1
+http://176.67.211.6:15000/udp/239.1.1.132:22132
+#EXTINF:0 tvg-id="ext" group-title="Channels",Novi kanal —
+http://176.67.211.6:15000/udp/239.1.1.133:22133
+#EXTINF:0 tvg-id="TLC.uk" group-title="Channels",TLC
+http://176.67.211.6:15000/udp/239.1.1.134:22134
+#EXTINF:0 tvg-id="ShortsTV.be" group-title="Channels",ShortsTV HD
+http://176.67.211.6:15000/udp/239.1.1.135:22135
+#EXTINF:0 tvg-id="AXNAdria.rs" group-title="Channels",AXN Adria
+http://176.67.211.6:15000/udp/239.1.1.136:22136
+#EXTINF:0 tvg-id="ext" group-title="Channels",Novi kanal
+http://176.67.211.6:15000/udp/239.1.1.137:22137
+#EXTINF:0 tvg-id="ext" group-title="Channels",Novi kanal
+http://176.67.211.6:15000/udp/239.1.1.138:22138
+#EXTINF:0 tvg-id="ext" group-title="Channels",Novi kanal
+http://176.67.211.6:15000/udp/239.1.1.139:22139
+#EXTINF:0 tvg-id="TraceSport.uk" group-title="Channels",Trace Sport Stars HD
+http://176.67.211.6:15000/udp/239.1.1.140:22140
+#EXTINF:0 tvg-id="da_vinci-rus" group-title="Channels",DaVinci Learning
+http://176.67.211.6:15000/udp/239.1.1.141:22141
+#EXTINF:0 tvg-id="history" group-title="Channels",Viasat History (FSS)
+http://176.67.211.6:15000/udp/239.1.1.143:22143
+#EXTINF:0 tvg-id="viasat-nature" group-title="Channels",Viasat Nature East FSS
+http://176.67.211.6:15000/udp/239.1.1.144:22144
+#EXTINF:0 tvg-id="ext" group-title="Channels",TV1000 Balkan FSS
+http://176.67.211.6:15000/udp/239.1.1.145:22145
+#EXTINF:0 tvg-id="TVPINK.rs" group-title="Channels",Pink
+http://176.67.211.6:15000/udp/239.1.1.146:22146
+#EXTINF:0 tvg-id="Pink2.hr" group-title="Channels",Pink 2
+http://176.67.211.6:15000/udp/239.1.1.147:22147
+#EXTINF:0 tvg-id="Pink3.rs" group-title="Channels",Pink 3 Info
+http://176.67.211.6:15000/udp/239.1.1.148:22148
+#EXTINF:0 tvg-id="PinkExtra.svn" group-title="Channels",Pink Extra
+http://176.67.211.6:15000/udp/239.1.1.149:22149
+#EXTINF:0 tvg-id="PinkM.rs" group-title="Channels",Pink M
+http://176.67.211.6:15000/udp/239.1.1.150:22150
+#EXTINF:0 tvg-id="PINKBH.hr" group-title="Channels",Pink BH
+http://176.67.211.6:15000/udp/239.1.1.151:22151
+#EXTINF:0 tvg-id="ext" group-title="Channels",Novi kanal
+http://176.67.211.6:15000/udp/239.1.1.152:22152
+#EXTINF:0 tvg-id="PinkMusic2.rs" group-title="Channels",Pink Music 2
+http://176.67.211.6:15000/udp/239.1.1.153:22153
+#EXTINF:0 tvg-id="PinkHits1.rs" group-title="Channels",Pink Hits 1
+http://176.67.211.6:15000/udp/239.1.1.154:22154
+#EXTINF:0 tvg-id="PinkHits2.rs" group-title="Channels",Pink Hits 2
+http://176.67.211.6:15000/udp/239.1.1.155:22155
+#EXTINF:0 tvg-id="PinkMusic3.rs" group-title="Channels",Bravo Music
+http://176.67.211.6:15000/udp/239.1.1.156:22156
+#EXTINF:0 tvg-id="ext" group-title="Channels",City Play
+http://176.67.211.6:15000/udp/239.1.1.157:22157
+#EXTINF:0 tvg-id="PinkFolk.svn" group-title="Channels",Pink Folk
+http://176.67.211.6:15000/udp/239.1.1.158:22158
+#EXTINF:0 tvg-id="PinkFolk2.rs" group-title="Channels",Pink Folk 2
+http://176.67.211.6:15000/udp/239.1.1.159:22159
+#EXTINF:0 tvg-id="PinkWestern.rs" group-title="Channels",Pink Western
+http://176.67.211.6:15000/udp/239.1.1.160:22160
+#EXTINF:0 tvg-id="PinkFamily.hr" group-title="Channels",Pink Family
+http://176.67.211.6:15000/udp/239.1.1.161:22161
+#EXTINF:0 tvg-id="PinkFilm.rs" group-title="Channels",Pink Film
+http://176.67.211.6:15000/udp/239.1.1.162:22162
+#EXTINF:0 tvg-id="PinkHorror.hr" group-title="Channels",Pink Horror
+http://176.67.211.6:15000/udp/239.1.1.163:22163
+#EXTINF:0 tvg-id="ext" group-title="Channels",Pink Fashion
+http://176.67.211.6:15000/udp/239.1.1.165:22165
+#EXTINF:0 tvg-id="PinkKoncert.rs" group-title="Channels",Pink Koncert
+http://176.67.211.6:15000/udp/239.1.1.166:22166
+#EXTINF:0 tvg-id="ext" group-title="Channels",Pink&Roll
+http://176.67.211.6:15000/udp/239.1.1.167:22167
+#EXTINF:0 tvg-id="ext" group-title="Channels",HA HA
+http://176.67.211.6:15000/udp/239.1.1.168:22168
+#EXTINF:0 tvg-id="ext" group-title="Channels",LOL
+http://176.67.211.6:15000/udp/239.1.1.169:22169
+#EXTINF:0 tvg-id="PinkPlus.se" group-title="Channels",Pink Plus
+http://176.67.211.6:15000/udp/239.1.1.170:22170
+#EXTINF:0 tvg-id="PinkComedy.hr" group-title="Channels",Pink Comedy
+http://176.67.211.6:15000/udp/239.1.1.171:22171
+#EXTINF:0 tvg-id="PinkCrime.rs" group-title="Channels",Pink Crime&Mystery
+http://176.67.211.6:15000/udp/239.1.1.172:22172
+#EXTINF:0 tvg-id="ext" group-title="Channels",Pink Sci-Fi&Fantasy
+http://176.67.211.6:15000/udp/239.1.1.173:22173
+#EXTINF:0 tvg-id="PinkPremium.rs" group-title="Channels",Pink Premium
+http://176.67.211.6:15000/udp/239.1.1.174:22174
+#EXTINF:0 tvg-id="PinkMovies2.rs" group-title="Channels",Pink Romance
+http://176.67.211.6:15000/udp/239.1.1.175:22175
+#EXTINF:0 tvg-id="PinkThriller.rs" group-title="Channels",Pink Thriller
+http://176.67.211.6:15000/udp/239.1.1.176:22176
+#EXTINF:0 tvg-id="PinkAction.rs" group-title="Channels",Pink Action
+http://176.67.211.6:15000/udp/239.1.1.177:22177
+#EXTINF:0 tvg-id="PinkMovies.rs" group-title="Channels",Pink Movies
+http://176.67.211.6:15000/udp/239.1.1.178:22178
+#EXTINF:0 tvg-id="PinkSerije.rs" group-title="Channels",Pink Serije
+http://176.67.211.6:15000/udp/239.1.1.179:22179
+#EXTINF:0 tvg-id="PinkWorldCinema.rs" group-title="Channels",Pink World Cinema
+http://176.67.211.6:15000/udp/239.1.1.180:22180
+#EXTINF:0 tvg-id="PinkWorld.rs" group-title="Channels",Pink World
+http://176.67.211.6:15000/udp/239.1.1.181:22181
+#EXTINF:0 tvg-id="ext" group-title="Channels",Pink http://www.htru.ru/ Show
+http://176.67.211.6:15000/udp/239.1.1.182:22182
+#EXTINF:0 tvg-id="PinkClassic.rs" group-title="Channels",Pink Classic
+http://176.67.211.6:15000/udp/239.1.1.184:22184
+#EXTINF:0 tvg-id="ext" group-title="Channels",Pink Style
+http://176.67.211.6:15000/udp/239.1.1.185:22185
+#EXTINF:0 tvg-id="PinkPedia.rs" group-title="Channels",Pink Pedia
+http://176.67.211.6:15000/udp/239.1.1.186:22186
+#EXTINF:0 tvg-id="PinkReality.rs" group-title="Channels",Pink Reality
+http://176.67.211.6:15000/udp/239.1.1.187:22187
+#EXTINF:0 tvg-id="PinkSoap.rs" group-title="Channels",Pink Soap
+http://176.67.211.6:15000/udp/239.1.1.188:22188
+#EXTINF:0 tvg-id="PinkZabava.rs" group-title="Channels",Pink Zabava
+http://176.67.211.6:15000/udp/239.1.1.189:22189
+#EXTINF:0 tvg-id="ArenaSport5.rs" group-title="Channels",Arena Sport 5
+http://176.67.211.6:15000/udp/239.1.1.190:22190

@@ -1,0 +1,628 @@
+:root {
+  --bg: #08111f;
+  --card: rgba(20, 30, 48, 0.72);
+  --border: rgba(255, 255, 255, 0.08);
+  --text: #e5eefc;
+  --muted: #94a3b8;
+  --accent: #38bdf8;
+  --accent2: #22c55e;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family:
+    Segoe UI,
+    Roboto,
+    sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(56, 189, 248, 0.15),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at top right,
+      rgba(34, 197, 94, 0.12),
+      transparent 30%
+    ),
+    #08111f;
+  padding: 12px;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(8, 17, 31, 0.85);
+  backdrop-filter: blur(18px);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 18px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.logo {
+  font-size: 28px;
+  font-weight: 800;
+}
+.logo span {
+  color: var(--accent);
+}
+.subtitle {
+  color: var(--muted);
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+.container {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+@media (min-width: 600px) {
+  .container {
+    max-width: 800px;
+    margin: auto;
+  }
+}
+@media (min-width: 900px) {
+  .container {
+    max-width: 1200px;
+    margin: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1400px;
+    margin: auto;
+  }
+}
+.section {
+  margin-top: 18px;
+}
+.section h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.section h2:before {
+  content: "";
+  width: 5px;
+  height: 20px;
+  border-radius: 999px;
+  background: linear-gradient(var(--accent), #f43f5e);
+}
+.grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 2fr;
+}
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1400px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr; /* od 1400px: tri kolone */
+  }
+}
+
+.kpi {
+  display: grid;
+  gap: 5px;
+  padding: 5px;
+  grid-template-columns: 0.8fr 3fr 0.8fr;
+  grid-template-areas:
+    "kpi1 weather kpi3"
+    "kpi2 weather kpi4";
+  align-items: center;
+  justify-items: center;
+}
+
+.kpi-card {
+  background: var(--card);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 8px 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 65px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Mapiranje pozicija */
+
+.kpi-card:nth-child(1) {
+  grid-area: kpi1;
+}
+.kpi-card:nth-child(2) {
+  grid-area: kpi2;
+}
+.kpi-card:nth-child(3) {
+  grid-area: kpi3;
+}
+.kpi-card:nth-child(4) {
+  grid-area: kpi4;
+}
+
+.kpi-title {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 2px;
+}
+.kpi-value {
+  font-size: 1.3rem;
+  font-weight: 800;
+  text-align: right;
+  color: var(--accent);
+}
+
+/* Desktop raspored (sa tvoje prve skice) ostaje isti */
+@media (min-width: 900px) {
+  .kpi {
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas:
+      "kpi1 weather kpi3"
+      "kpi2 weather kpi4";
+  }
+}
+
+/* Mobilni raspored - isto smanjen razmak */
+@media (max-width: 600px) {
+  .kpi {
+    grid-template-columns: 1fr;
+    gap: 10px; /* Razmak između kartica na mobilnom */
+    grid-template-areas:
+      "weather"
+      "kpi1"
+      "kpi2"
+      "kpi3"
+      "kpi4";
+  }
+  #weathers {
+    margin: 10px 0; /* Margina gore/dole na mobilnom */
+  }
+}
+
+.card {
+  background: var(--card);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 10px; /* duplo manje */
+  font-size: 0.85em; /* smanjen tekst */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* tv.html */
+.weather {
+  background: var(--card);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  color: #ffffff;
+  width: 100% auto !important;
+  max-width: 700px;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: transform 1.4s;
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 1.7s ease-in;
+}
+/* Weather kartica - maksimalno širenje */
+#weathers {
+  grid-area: weather;
+  /* Dodajemo width: auto da se lepo uklopi u grid zonu */
+  width: 100%;
+  min-height: 170px;
+}
+@media (min-width: 900px) {
+  .weather-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1400px) {
+  .weather-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+/* Kontejner za ikonu */
+.weather-icon-anim {
+  font-size: 2.5rem;
+  display: inline-block;
+  text-align: right;
+  animation: pulse 3s infinite ease-in-out;
+}
+.weather-cards:hover {
+  transform: scale(1.02);
+}
+.footer-update {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.7rem;
+  opacity: 0.5;
+  color: white;
+}
+/* Smanjivanje fontova za mobilne uređaje */
+@media (max-width: 480px) {
+  .temp-value {
+    font-size: 3rem;
+  }
+  .weather-icon-anim {
+    font-size: 2rem;
+  }
+  .header,
+  .bottom-info {
+    font-size: 0.7rem;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+/* Gornji deo: Lokacija i dugme */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.unit-btn {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+}
+/* Centralna temperatura */
+.temp-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* Ovo gura ikonu levo, a temp desno */
+  margin-top: 15px;
+  margin-bottom: 0;
+  padding: 0 10px;
+  /* Mali prostor od ivica */
+}
+.temp-info-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.temp-value {
+  margin-top: 5px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 1;
+}
+.temp-value sup {
+  font-size: 0.4em;
+  vertical-align: top;
+  /* Podiže ga na vrh */
+  margin-left: 2px;
+  /* Mali razmak od znaka stepena */
+}
+.condition {
+  font-size: 1.1rem;
+  color: rgb(241, 154, 40);
+  margin-top: 10px;
+  opacity: 0.9;
+}
+/* Donji deo sa 3 kolone */
+.bottom-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 20px;
+}
+.info-item {
+  text-align: left;
+}
+.info-label {
+  font-size: 0.75rem;
+  opacity: 0.8;
+  display: block;
+  margin-bottom: 5px;
+  color: #ffffff;
+  text-align: center;
+}
+.info-value {
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+}
+.info-label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-align: center;
+}
+/* Specifične animacije */
+.sun {
+  animation: rotate 10s linear infinite;
+  color: #ffce54;
+}
+.rain {
+  animation: rain 1s infinite linear;
+  color: #4fc3f7;
+}
+.snow {
+  animation: snow 2s infinite linear;
+  color: #ffffff;
+}
+.night {
+  animation: float 3s infinite ease-in-out;
+  color: #f1c40f;
+}
+.cloud {
+  animation: drift 4s infinite ease-in-out;
+  color: #bdc3c7;
+}
+.hot {
+  animation: pulse 1s infinite;
+  color: #e74c3c;
+}
+.cold {
+  animation: shake 2s infinite;
+  color: #95a5a6;
+}
+/* Ključne slike (Keyframes) */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rain {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+}
+@keyframes snow {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  100% {
+    transform: translateY(15px) rotate(360deg);
+  }
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes drift {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(10px);
+  }
+}
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: rotate(-5deg);
+  }
+
+  50% {
+    transform: rotate(5deg);
+  }
+}
+/* tv.html */
+
+/* Kartica za video */
+.video-card {
+  background: var(--card);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.video-card b {
+  color: var(--accent);
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+.video-card video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  object-fit: cover;
+  background: #000;
+  display: block;
+}
+#truckban {
+  display: grid;
+  gap: 16px;
+}
+.day-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+.day-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--accent2);
+}
+.section-block {
+  margin-top: 12px;
+  padding: 10px;
+  border-left: 4px solid var(--accent);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.02);
+}
+.section-block h4 {
+  margin-bottom: 6px;
+  color: var(--accent);
+  font-size: 14px;
+}
+.section-block ul {
+  list-style: disc;
+  padding-left: 20px;
+  color: var(--text);
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+.badge {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  background: rgba(34, 197, 94, 0.18);
+  color: #86efac;
+}
+/* Satnice i praznici */
+.ban-time {
+  font-weight: 700;
+  color: var(--accent2);
+}
+.holiday {
+  color: #facc15; /* žuta za praznike */
+  font-style: italic;
+}
+/* Dugme za prikaz više/manje */
+.toggle-btn {
+  margin-top: 6px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 4px 10px;
+  cursor: pointer;
+  font-size: 12px;
+}
+.toggle-btn:hover {
+  background: var(--accent2);
+}
+/* Skriveni deo */
+.hidden-items {
+  margin-top: 6px;
+}
+.hidden-items ul {
+  list-style: circle;
+  padding-left: 24px;
+  color: var(--muted);
+  font-size: 12px;
+}
+.country-block {
+  margin-bottom: 16px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.02);
+}
+.country-block summary {
+  font-weight: 700;
+  color: var(--accent);
+  cursor: pointer;
+  padding: 6px;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+footer {
+  text-align: center;
+  padding: 30px 10px;
+  color: var(--muted);
+  font-size: 12px;
+}
+/* Wrapper da video zauzima pola ekrana */
+.tv-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+/* Modernija select lista */
+.channel-select {
+  flex: 1 1 40%;
+  max-width: 40%;
+  padding: 10px 14px;
+  font-size: 16px;
+  border: 1px solid #555;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #222, #333);
+  color: #eee;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.channel-select:hover {
+  background: linear-gradient(135deg, #333, #444);
+}
+.tv-player {
+  flex: 1 1 50%;
+  max-width: 50%;
+  border: 2px solid #444;
+  border-radius: 8px;
+  background: #000;
+}
+select {
+  padding: 8px;
+  margin: 10px 0;
+}
+video {
+  width: 100%;
+  max-width: 720px;
+  border: 2px solid #444;
+  border-radius: 8px;
+}

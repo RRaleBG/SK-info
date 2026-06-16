@@ -1,0 +1,27 @@
+{
+  "name": "sk",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "site.js",
+  "scripts": {
+    "update": "node scripts/update.js",
+    "start": "npx serve public",
+    "proxy": "node server.js",
+    "dev": "concurrently \"npx serve public\" \"node server.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Rajcic Rados",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.1.0",
+    "express": "^5.2.1",
+    "http-proxy": "^1.18.1",
+    "node-fetch": "^3.3.2",
+    "puppeteer": "^24.43.1"
+  },
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
