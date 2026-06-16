@@ -27,6 +27,8 @@ function loadCameras() {
 
   //  const PROXY_SERVER = "http://localhost:4000/proxy?url=";
 
+   const PROXY_SERVER = "https://sk-info.vercel.app/api?url=";
+/*
     Object.entries(cams).forEach(([id, url]) => {
         const el = document.getElementById(id);
         if (!el)
@@ -49,6 +51,44 @@ function loadCameras() {
             console.warn("No HLS support for", id);
         }
     });
+*/
+   // Definiši svoj proxy ovde
+const PROXY_SERVER = "https://sk-info.vercel.app/api?url=";
+
+Object.entries(cams).forEach(([id, url]) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+
+    if (window.Hls && Hls.isSupported()) {
+        const hls = new Hls({
+            debug: false,
+            lowLatencyMode: true,
+            enableWorker: true,
+            // xhrSetup osigurava da svaki .ts segment ide kroz proxy
+            xhrSetup: function(xhr, url) {
+                xhr.open('GET', PROXY_SERVER + encodeURIComponent(url), true);
+            }
+        });
+
+        // Učitaj originalni URL, a xhrSetup će ga automatski "uprkositi"
+        hls.loadSource(url);
+        hls.attachMedia(el);
+        
+        // Dodaj listener za greške za lakše debagovanje
+        hls.on(Hls.Events.ERROR, function (event, data) {
+            if (data.fatal) {
+                console.error("Fatalna HLS greška za " + id, data);
+            }
+        });
+    }
+    else if (el.canPlayType && el.canPlayType("application/vnd.apple.mpegurl")) {
+        // Safari (iOS) nativno podržava HLS i ne treba mu proxy
+        el.src = url;
+    } else {
+        console.warn("No HLS support for", id);
+    }
+});
+
 }
 
 function attachStream(videoId, url) {
