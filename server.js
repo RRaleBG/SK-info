@@ -4,7 +4,7 @@ import httpProxy from 'http-proxy';
 const app = express();
 const proxy = httpProxy.createProxyServer({});
 
-// Logovanje grešaka proxy-ja da se server ne bi rušio
+// Logovanje grešaka proxy-ja
 proxy.on('error', (err, req, res) => {
     console.error('Proxy greška:', err);
     if (!res.headersSent) {
@@ -12,7 +12,8 @@ proxy.on('error', (err, req, res) => {
     }
 });
 
-app.get('/proxy', (req, res) => {
+// Ovde više ne koristimo /proxy, već Vercel mapira fajl na /api/proxy
+app.get('/', (req, res) => {
     const targetUrl = req.query.url;
 
     if (!targetUrl) {
@@ -22,38 +23,20 @@ app.get('/proxy', (req, res) => {
     try {
         const target = new URL(targetUrl).origin;
 
-        // Postavi CORS headere da browser dozvoli strimovanje
         res.setHeader('Access-Control-Allow-Origin', '*');
         res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS');
-        res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
 
-        // Proxy konfiguracija
         proxy.web(req, res, {
             target: target,
-            changeOrigin: true,    // Važno za AMSS/MUP servere
-            secure: false,         // Ignoriše istekle SSL sertifikate
-            ignorePath: false      // Prosleđuje punu putanju
+            changeOrigin: true,
+            secure: false
         });
-
     } catch (err) {
-        console.error('Neispravan URL:', err);
-        res.status(400).send('Neispravan URL format');
+        res.status(400).send('Neispravan URL');
     }
 });
 
-// Ruta za proveru da li proxy radi
-app.get('/status', (req, res) => res.send('Proxy server je aktivan'));
+// UKLONI OVO: app.listen(PORT, ...) 
 
-// --- IZMENA ZA VERCEL ---
-// Pokreni server samo ako nije production (lokalni razvoj)
-if (process.env.NODE_ENV !== 'production') {
-    const PORT = 4000;
-    app.listen(PORT, () => {
-        console.log(`-------------------------------------------`);
-        console.log(`Proxy aktivan na http://localhost:${PORT}`);
-        console.log(`-------------------------------------------`);
-    });
-}
-
-// Eksportujemo aplikaciju da bi je Vercel koristio kao modul
-export default app;
+// DODAJ OVO ZA VERCEL:
+module.exports = app;
