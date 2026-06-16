@@ -25,7 +25,7 @@ function loadCameras() {
         "djala2": "https://kamere.mup.gov.rs:4443/Djala/djala2.m3u8"
     };
 
-    const PROXY_SERVER = "http://localhost:4000/proxy?url=";
+  //  const PROXY_SERVER = "http://localhost:4000/proxy?url=";
 
     Object.entries(cams).forEach(([id, url]) => {
         const el = document.getElementById(id);
@@ -39,8 +39,9 @@ function loadCameras() {
                     lowLatencyMode: true,
                     enableWorker: true
                 });
-            hls.loadSource(PROXY_SERVER + encodeURIComponent(url));
-            hls.attachMedia(el);
+           // hls.loadSource(PROXY_SERVER + encodeURIComponent(url));
+            hls.loadSource(url);
+           hls.attachMedia(el);
         }
         else if (el.canPlayType && el.canPlayType("application/vnd.apple.mpegurl")) {
             el.src = url;
