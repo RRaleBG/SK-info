@@ -44,9 +44,16 @@ app.get('/proxy', (req, res) => {
 // Ruta za proveru da li proxy radi
 app.get('/status', (req, res) => res.send('Proxy server je aktivan'));
 
-const PORT = 4000;
-app.listen(PORT, () => {
-    console.log(`-------------------------------------------`);
-    console.log(`Proxy aktivan na http://localhost:${PORT}`);
-    console.log(`-------------------------------------------`);
-});
+// --- IZMENA ZA VERCEL ---
+// Pokreni server samo ako nije production (lokalni razvoj)
+if (process.env.NODE_ENV !== 'production') {
+    const PORT = 4000;
+    app.listen(PORT, () => {
+        console.log(`-------------------------------------------`);
+        console.log(`Proxy aktivan na http://localhost:${PORT}`);
+        console.log(`-------------------------------------------`);
+    });
+}
+
+// Eksportujemo aplikaciju da bi je Vercel koristio kao modul
+export default app;
