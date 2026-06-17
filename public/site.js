@@ -96,7 +96,6 @@ async function loadTruckBan() {
     const data = await res.json();
     const container = document.getElementById("truckban");
 
-    // grupisanje po zemlji
     const groupedByCountry = {};
     data.week.forEach(day => {
         day.entries.forEach(entry => {
@@ -105,86 +104,75 @@ async function loadTruckBan() {
             groupedByCountry[entry.country].push({ day: day.day, date: day.date, entry });
         });
     });
-
+    const flagMap = {
+        "Austrija": "./flags/at.png",
+        "Slovenija": "./flags/si.png",
+        "Mađarska": "./flags/hu.png",
+        "Nemačka": "./flags/de.png",
+        "Poljska": "./flags/pl.png",
+        "Slovačka": "./flags/sk.png"
+    };
     Object.entries(groupedByCountry).forEach(([country, items]) => {
         const details = document.createElement("details");
         details.className = "country-block";
 
         const summary = document.createElement("summary");
-        summary.textContent = country;
+
+        const span = document.createElement("span");
+        span.textContent = country;
+
+        const flag = document.createElement("img");
+        flag.src = flagMap[country] || "";
+        flag.alt = country;
+        flag.className = "flag-icon";
+
+        summary.appendChild(span);
+        summary.appendChild(flag);
         details.appendChild(summary);
 
-        // grupisanje po danu unutar zemlje
-        const groupedByDay = {};
-        items.forEach(({ day, date, entry }) => {
-            const key = `${day} ${date}`;
-            if (!groupedByDay[key])
-                groupedByDay[key] = [];
-            groupedByDay[key].push(entry);
-        });
+        container.appendChild(details);
 
-        Object.entries(groupedByDay).forEach(([dayKey, entries]) => {
-            const dayCard = document.createElement("div");
-            dayCard.className = "day-card";
+        // Klik na summary otvara modal
+        summary.addEventListener("click", (e) => {
+            e.preventDefault(); // spreči default expand
+            const modal = document.getElementById("banModal");
+            const body = document.getElementById("modal-body");
+            body.innerHTML = "";
 
-            const header = document.createElement("div");
-            header.className = "day-header";
+            // Naslov
+            const header = document.createElement("h3");
+            header.textContent = country;
+            body.appendChild(header);
 
-            // razdvajanje dana i datuma
-            const [day, ...dateParts] = dayKey.split(" ");
-            const date = dateParts.join(" ");
-
-            const daySpan = document.createElement("span");
-            daySpan.className = "day-left";
-            daySpan.textContent = day;
-
-            const dateSpan = document.createElement("span");
-            dateSpan.className = "day-right";
-            dateSpan.textContent = date;
-
-            header.appendChild(daySpan);
-            header.appendChild(dateSpan);
-            dayCard.appendChild(header);
-
-            entries.forEach(entry => {
+            // Ubaci sve detalje u modal
+            items.forEach(({ day, date, entry }) => {
                 const sectionBlock = document.createElement("div");
                 sectionBlock.className = "section-block";
 
                 const title = document.createElement("h4");
-                title.textContent = `${entry.section}`;
+                title.textContent = `${day} ${date} – ${entry.section}`;
                 sectionBlock.appendChild(title);
 
                 const ul = document.createElement("ul");
-                entry.items.slice(0, 3).forEach(item => ul.appendChild(formatBanItem(item)));
-
-                const hidden = document.createElement("div");
-                hidden.className = "hidden-items";
-                hidden.style.display = "none";
-
-                const hiddenList = document.createElement("ul");
-                entry.items.slice(3).forEach(item => hiddenList.appendChild(formatBanItem(item)));
-                hidden.appendChild(hiddenList);
-
+                entry.items.forEach(item => ul.appendChild(formatBanItem(item)));
                 sectionBlock.appendChild(ul);
-                sectionBlock.appendChild(hidden);
 
-                const btn = document.createElement("button");
-                btn.className = "toggle-btn";
-                btn.textContent = "➕ Prikaži više";
-                btn.onclick = () => {
-                    hidden.style.display = hidden.style.display === "none" ? "block" : "none";
-                    btn.textContent = hidden.style.display === "none" ? "➕ Prikaži više" : "➖ Prikaži manje";
-                };
-
-                sectionBlock.appendChild(btn);
-                dayCard.appendChild(sectionBlock);
+                body.appendChild(sectionBlock);
             });
 
-            details.appendChild(dayCard);
+            modal.style.display = "block";
         });
 
         container.appendChild(details);
     });
+
+    // Zatvaranje modala
+    const modal = document.getElementById("banModal");
+    const closeBtn = modal.querySelector(".close");
+    closeBtn.onclick = () => modal.style.display = "none";
+    window.onclick = (event) => {
+        if (event.target === modal) modal.style.display = "none";
+    };
 }
 
 /* =========================

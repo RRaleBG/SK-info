@@ -8,7 +8,7 @@
   "orientation": "portrait",
   "icons": [
     {
-      "src": "https://img.icons8.com/flat-round/512/truck.png",
+      "src": "/public/favicon.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
