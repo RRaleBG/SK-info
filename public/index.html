@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+  <title>Smiljanić Komerc | Vozački Portal</title>
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  <link rel="stylesheet" href="./style.css" media="all">
+  <!-- Video.js CSS -->
+  <link href="https://vjs.zencdn.net/8.3.0/video-js.css" rel="stylesheet" />
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' 'unsafe-eval' blob: data:; 
+                 connect-src * blob:; 
+                 img-src * blob: data:; 
+                 style-src * 'unsafe-inline'; 
+                 worker-src * blob:;">
+</head>
+
+<body>
+  <header>
+    <div class="logo"> Smiljanić <span>KOMERC</span>
+    </div>
+    <div class="subtitle">• LOGISTIČKI INFO CENTAR •</div>
+  </header>
+
+  <div class="container">
+    <div class="kpi">
+      <div class="kpi-card">
+        <a href="kanali.html" style="text-decoration: none; color: inherit;">
+          <div class="kpi-title">Gledaj TV 📺</div>
+          <div class="kpi-value" style="font-size: 30px;">📺</div>
+
+
+        </a>
+      </div>
+
+      <div class="kpi-card">
+        <div class="kpi-title">Granice LIVE</div>
+        <div class="kpi-value">14</div>
+      </div>
+
+      <div class="weather" id="weathers"></div>
+
+      <div class="kpi-card">
+        <div class="kpi-title">Parking mesta</div>
+        <div class="kpi-value">NN</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-title">Saobraćaj</div>
+        <div class="kpi-value">OK</div>
+      </div>
+    </div>
+
+    <br />
+
+    <div class="section">
+      <h2>EU zabrane</h2>
+      <div id="truckban"></div>
+    </div>
+
+
+    <div class="section">
+
+      <h2>Granice uživo</h2>
+      <div class="grid">
+
+        <div class="card video-card">
+          <b>Horgoš ULAZ 🟢 LIVE</b>
+          <video id="cam-horgos1" controls autoplay muted playsinline></video>
+        </div>
+
+        <div class="card video-card">
+          <b>Horgoš IZLAZ 🟢 LIVE</b>
+          <video id="cam-horgos2" controls autoplay muted playsinline></video>
+        </div>
+
+        <div class="card video-card">
+          <b>Batrovci ULAZ 🟢 LIVE</b>
+          <video id="cam-batrovci1" controls autoplay muted playsinline></video>
+        </div>
+
+        <div class="card video-card">
+          <b>Batrovci IZLAZ 🟢 LIVE</b>
+          <video id="cam-batrovci2" controls autoplay muted playsinline></video>
+        </div>
+
+        <div class="card video-card">
+          <b>Gradina ULAZ 🟢 LIVE</b>
+          <video id="cam-gradina1" controls autoplay muted playsinline></video>
+        </div>
+
+        <div class="card video-card">
+          <b>Gradina IZLAZ 🟢 LIVE</b>
+          <video id="cam-gradina2" controls autoplay muted playsinline></video>
+        </div>
+
+        <div class="card video-card">
+          <b>Presevo 1 (RS ↔ Ks)🟢 LIVE</b>
+          <video id="cam-presevo1" controls autoplay muted playsinline></video>
+        </div>
+
+        <div class="card video-card">
+          <b> Presevo 2 (RS ↔ Ks)🟢 LIVE</b>
+          <video id="cam-presevo2" controls autoplay muted playsinline></video>
+        </div>
+
+        <div class="card video-card">
+          <b>Kelebija ULAZ 🟢 LIVE</b>
+          <video id="cam-kelebija1" controls autoplay muted playsinline></video>
+        </div>
+
+        <div class="card video-card">
+          <b>Kelebija IZLAZ 🟢 LIVE</b>
+          <video id="cam-kelebija2" controls autoplay muted playsinline></video>
+        </div>
+
+        <div class="card video-card">
+          <b>Djala 1 🟢 LIVE</b>
+          <video id="djala1" controls autoplay muted playsinline></video>
+        </div>
+
+        <div class="card video-card">
+          <b>Djala 2 🟢 LIVE</b>
+          <video id="djala2" controls autoplay muted playsinline></video>
+        </div>
+
+        <div class="card video-card">
+          <b>Vatin 1 🟢 LIVE</b>
+          <video id="cam-vatin1" controls autoplay muted playsinline></video>
+        </div>
+
+        <div class="card video-card">
+          <b>Vatin 2 🟢 LIVE</b>
+          <video id="cam-vatin2" controls autoplay muted playsinline></video>
+        </div>
+
+      </div>
+    </div>
+
+    <footer>
+      SK Info Portal • Modern UI 2026
+    </footer>
+  </div>
+
+  <script type="module" src="./site.js"></script>
+  <script type="module" src="./tv.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  <script src="https://vjs.zencdn.net/8.3.0/video.min.js"></script>
+</body>
+
+</html>

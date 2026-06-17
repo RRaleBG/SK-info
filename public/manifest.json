@@ -1,0 +1,17 @@
+{
+  "name": "Smiljanić Komerc Info",
+  "short_name": "SK Info",
+  "start_url": "/SK/public/index.html",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#1e293b",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "https://img.icons8.com/flat-round/512/truck.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
