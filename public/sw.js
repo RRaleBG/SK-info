@@ -30,7 +30,7 @@ self.addEventListener('activate', (e) => {
 
 // Mrežni zahtevi sa fallback-om na keš
 self.addEventListener('fetch', (e) => {
-  const url = e.request.url;
+ const url = e.request.url;
 
   // 1. PRESKOČI VIDEO STRIMOVE (dozvoli proxy-ju da radi)
   // Ako zahtev ide ka tvom proxy serveru ili sadrži m3u8/ts, ignoriši SW logiku
@@ -58,8 +58,8 @@ self.addEventListener('push', (e) => {
 
   const options = {
     body: data.body,
-    icon: 'https://www.smiljanickomerc.rs/wp-content/uploads/2019/04/logo-web2.png',
-    badge: 'https://www.smiljanickomerc.rs/wp-content/uploads/2019/04/logo-web2.png',
+    icon: './favicon.ico',
+    badge: './smicom.ico',
     vibrate: [200, 100, 200],
     actions: [
       { action: 'open', title: 'Otvori Portal' }
