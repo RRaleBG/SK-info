@@ -9,7 +9,7 @@
   "orientation": "portrait",
   "icons": [
     {
-      "src": "/public/favicon.png",
+      "src": "./smicom.ico",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
