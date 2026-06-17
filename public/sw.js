@@ -1,74 +1,247 @@
-const CACHE_NAME = 'sk-info-v1';
-const ASSETS = [
-  './index.html',
-  './manifest.json'
+const CACHE_NAME = 'sk-info-v5';
+
+const STATIC_ASSETS = [
+'./',
+'./index.html',
+'./kanali.html',
+'./tv.html',
+
+'./style.css',
+
+'./site.js',
+'./tv.js',
+'./kanali.js',
+'./channels.js',
+'./m3u-parser.js',
+
+'./manifest.json',
+
+'./favicon.ico',
+'./icon-192.png',
+'./icon-512.png',
+'./icon-maskable-512.png'
 ];
 
-// Instalacija i keširanje osnovnih sredstava
-self.addEventListener('install', (e) => {
-  e.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => {
-      return cache.addAll(ASSETS);
-    })
-  );
+/* =========================
+INSTALL
+========================= */
+
+self.addEventListener('install', (event) => {
+
+event.waitUntil(
+
+caches.open(CACHE_NAME)
+  .then(cache => cache.addAll(STATIC_ASSETS))
+  .then(() => self.skipWaiting())
+
+);
+
 });
 
-// Aktivacija i čišćenje starog keša
-self.addEventListener('activate', (e) => {
-  e.waitUntil(
-    caches.keys().then((keys) => {
-      return Promise.all(
-        keys.map((key) => {
-          if (key !== CACHE_NAME) {
-            return caches.delete(key);
-          }
-        })
-      );
-    })
-  );
+/* =========================
+ACTIVATE
+========================= */
+
+self.addEventListener('activate', (event) => {
+
+event.waitUntil(
+
+Promise.all([
+
+  caches.keys().then(keys =>
+
+    Promise.all(
+
+      keys.map(key => {
+
+        if (key !== CACHE_NAME) {
+          return caches.delete(key);
+        }
+
+      })
+
+    )
+
+  ),
+
+  self.clients.claim()
+
+])
+
+);
+
 });
 
-// Mrežni zahtevi sa fallback-om na keš
-self.addEventListener('fetch', (e) => {
- const url = e.request.url;
+/* =========================
+FETCH
+========================= */
 
-  // 1. PRESKOČI VIDEO STRIMOVE (dozvoli proxy-ju da radi)
-  // Ako zahtev ide ka tvom proxy serveru ili sadrži m3u8/ts, ignoriši SW logiku
-  if (url.includes('localhost:4000') || url.includes('.m3u8') || url.includes('.ts')) {
-    return; // Pusti browser da direktno obradi zahtev, ne diraj ga
-  }
+self.addEventListener('fetch', (event) => {
 
-  // 2. STANDARDNA LOGIKA ZA OSTALE FAJLOVE
-  e.respondWith(
-    fetch(e.request)
-      .catch(() => caches.match(e.request))
-  );
-});
+const request = event.request;
+const url = request.url;
 
-// Slušanje Push Obaveštenja od dispečera
-self.addEventListener('push', (e) => {
-  let data = { title: 'Smiljanić Komerc', body: 'Provera stanja na ruti.' };
-  if (e.data) {
-    try {
-      data = e.data.json();
-    } catch (err) {
-      data.body = e.data.text();
+// Ne diraj HLS streamove
+if (
+url.includes('.m3u8') ||
+url.includes('.ts') ||
+url.includes('localhost:4000')
+) {
+return;
+}
+
+// Ne keširaj API pozive
+if (
+request.method !== 'GET'
+) {
+return;
+}
+
+event.respondWith(
+
+caches.match(request)
+
+  .then(cachedResponse => {
+
+    if (cachedResponse) {
+      return cachedResponse;
     }
-  }
 
-  const options = {
-    body: data.body,
-    icon: './favicon.ico',
-    badge: './smicom.ico',
-    vibrate: [200, 100, 200],
-    actions: [
-      { action: 'open', title: 'Otvori Portal' }
-    ]
-  };
+    return fetch(request)
 
-  e.waitUntil(
-    self.registration.showNotification(data.title, options)
-  );
+      .then(networkResponse => {
+
+        if (
+          !networkResponse ||
+          networkResponse.status !== 200
+        ) {
+          return networkResponse;
+        }
+
+        const responseClone =
+          networkResponse.clone();
+
+        caches.open(CACHE_NAME)
+          .then(cache =>
+            cache.put(request, responseClone)
+          );
+
+        return networkResponse;
+
+      });
+
+  })
+
+  .catch(() =>
+    caches.match('./index.html')
+  )
+
+);
+
 });
 
-// Klik na obaveštenje
+/* =========================
+PUSH NOTIFICATIONS
+========================= */
+
+self.addEventListener('push', (event) => {
+
+let data = {
+title: 'Smiljanić Komerc',
+body: 'Novo obaveštenje.'
+};
+
+if (event.data) {
+
+try {
+
+  data = event.data.json();
+
+} catch {
+
+  data.body = event.data.text();
+
+}
+
+}
+
+const options = {
+
+body: data.body,
+
+icon: './icon-192.png',
+
+badge: './icon-192.png',
+
+vibrate: [200, 100, 200],
+
+requireInteraction: true,
+
+renotify: true,
+
+tag: 'sk-info',
+
+actions: [
+  {
+    action: 'open',
+    title: 'Otvori'
+  }
+]
+
+};
+
+event.waitUntil(
+self.registration.showNotification(
+data.title,
+options
+)
+);
+
+});
+
+/* =========================
+NOTIFICATION CLICK
+========================= */
+
+self.addEventListener('notificationclick', (event) => {
+
+event.notification.close();
+
+event.waitUntil(
+
+clients.matchAll({
+  type: 'window',
+  includeUncontrolled: true
+})
+
+.then(clientList => {
+
+  for (const client of clientList) {
+
+    if ('focus' in client) {
+      return client.focus();
+    }
+
+  }
+
+  if (clients.openWindow) {
+    return clients.openWindow('./');
+  }
+
+})
+
+);
+
+});
+
+/* =========================
+MESSAGE HANDLER
+========================= */
+
+self.addEventListener('message', (event) => {
+
+if (event.data === 'SKIP_WAITING') {
+self.skipWaiting();
+}
+
+});
