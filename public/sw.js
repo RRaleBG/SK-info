@@ -71,10 +71,4 @@ self.addEventListener('push', (e) => {
   );
 });
 
-// Klik na obaveštenje otvara sajt
-self.addEventListener('notificationclick', (e) => {
-  e.notification.close();
-  e.waitUntil(
-    clients.openWindow('./public/index.html')
-  );
-});
+// Klik na obaveštenje
