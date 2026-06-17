@@ -1,18 +1,64 @@
 {
-  "name": "Smiljanić Komerc Info",
-  "short_name": "SK Info",
-  "start_url": "./index.html",
-  "scope": "./",
-  "display": "standalone",
-  "background_color": "#0f172a",
-  "theme_color": "#1e293b",
-  "orientation": "portrait",
-  "icons": [
-    {
-      "src": "./smicom.ico",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any"
-    }
-  ]
+"id": "./",
+"name": "Smiljanić Komerc Info",
+"short_name": "SK Info",
+"description": "Logistički informacioni centar za vozače, dispečere i transport.",
+"lang": "sr-RS",
+
+"start_url": "./",
+"scope": "./",
+
+"display": "standalone",
+"orientation": "portrait",
+
+"background_color": "#0f172a",
+"theme_color": "#1e293b",
+
+"categories": [
+"business",
+"productivity",
+"transportation"
+],
+
+"icons": [
+{
+"src": "./icon-192.png",
+"sizes": "192x192",
+"type": "image/png",
+"purpose": "any"
+},
+{
+"src": "./icon-512.png",
+"sizes": "512x512",
+"type": "image/png",
+"purpose": "any"
+},
+{
+"src": "./icon-maskable-512.png",
+"sizes": "512x512",
+"type": "image/png",
+"purpose": "maskable"
+}
+],
+
+"shortcuts": [
+{
+"name": "Granice uživo",
+"short_name": "Granice",
+"description": "Pregled kamera na graničnim prelazima",
+"url": "./#granice"
+},
+{
+"name": "EU zabrane",
+"short_name": "Zabrane",
+"description": "Truck ban informacije",
+"url": "./#truckban"
+},
+{
+"name": "TV Kanali",
+"short_name": "TV",
+"description": "TV i video sadržaj",
+"url": "./tv.html"
+}
+]
 }
