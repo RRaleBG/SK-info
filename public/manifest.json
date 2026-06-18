@@ -2,7 +2,9 @@
 "id": "./",
 "name": "Smiljanić Komerc Info",
 "short_name": "SK Info",
-"description": "Logistički informacioni centar za vozače, dispečere i transport.",
+
+"description": "Profesionalna logistička platforma za praćenje stanja na graničnim prelazima, zabrana saobraćaja za teretna vozila, video nadzora, transportnih informacija i operativne podrške vozačima i dispečerima u realnom vremenu.",
+
 "lang": "sr-RS",
 
 "start_url": "./",
@@ -17,10 +19,36 @@
 "categories": [
 "business",
 "productivity",
-"transportation"
+"transportation",
+"utilities"
 ],
 
 "icons": [
+{
+"src": "./icon-72.png",
+"sizes": "72x72",
+"type": "image/png"
+},
+{
+"src": "./icon-96.png",
+"sizes": "96x96",
+"type": "image/png"
+},
+{
+"src": "./icon-128.png",
+"sizes": "128x128",
+"type": "image/png"
+},
+{
+"src": "./icon-144.png",
+"sizes": "144x144",
+"type": "image/png"
+},
+{
+"src": "./icon-152.png",
+"sizes": "152x152",
+"type": "image/png"
+},
 {
 "src": "./icon-192.png",
 "sizes": "192x192",
@@ -28,10 +56,21 @@
 "purpose": "any"
 },
 {
+"src": "./icon-384.png",
+"sizes": "384x384",
+"type": "image/png"
+},
+{
 "src": "./icon-512.png",
 "sizes": "512x512",
 "type": "image/png",
 "purpose": "any"
+},
+{
+"src": "./icon-maskable-192.png",
+"sizes": "192x192",
+"type": "image/png",
+"purpose": "maskable"
 },
 {
 "src": "./icon-maskable-512.png",
@@ -41,17 +80,32 @@
 }
 ],
 
+"screenshots": [
+{
+"src": "./screenshot-dashboard.png",
+"sizes": "1280x720",
+"type": "image/png",
+"form_factor": "wide"
+},
+{
+"src": "./screenshot-granice.png",
+"sizes": "1280x720",
+"type": "image/png",
+"form_factor": "wide"
+}
+],
+
 "shortcuts": [
 {
 "name": "Granice uživo",
 "short_name": "Granice",
-"description": "Pregled kamera na graničnim prelazima",
+"description": "Kamere na graničnim prelazima",
 "url": "./#granice"
 },
 {
 "name": "EU zabrane",
-"short_name": "Zabrane",
-"description": "Truck ban informacije",
+"short_name": "Truck Ban",
+"description": "Pregled zabrana saobraćaja za teretna vozila",
 "url": "./#truckban"
 },
 {
