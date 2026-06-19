@@ -1,4 +1,5 @@
 const CACHE_NAME = 'sk-info-v7';
+
 const STATIC_ASSETS = [
   './',
   './index.html',
@@ -18,19 +19,19 @@ const STATIC_ASSETS = [
 ];
 
 /* =========================
-INSTALL
+   INSTALL
 ========================= */
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME)  
-    .then(cache => cache.addAll(STATIC_ASSETS))
-    .then(() => self.skipWaiting())
+    caches.open(CACHE_NAME)
+      .then(cache => cache.addAll(STATIC_ASSETS))
+      .then(() => self.skipWaiting())
   );
 });
 
 /* =========================
-ACTIVATE
+   ACTIVATE
 ========================= */
 
 self.addEventListener('activate', (event) => {
@@ -44,146 +45,154 @@ self.addEventListener('activate', (event) => {
             }
           })
         )
-      ),  
+      ),
       self.clients.claim()
     ])
   );
 });
 
 /* =========================
-FETCH
+   FETCH
 ========================= */
 
 self.addEventListener('fetch', (event) => {
+
   const request = event.request;
   const url = request.url;
 
-  // HLS streamovi
-  if ( 
+  // HLS streamovi - ne keširati
+  if (
     url.includes('.m3u8') ||
     url.includes('.ts') ||
     url.includes('localhost:4000')
   ) {
     return;
-}
-  // Ne keširati API pozive
-  if (request.method !== 'GET') {  
+  }
+
+  // Samo GET zahtevi
+  if (request.method !== 'GET') {
     return;
   }
 
   event.respondWith(
-    caches.match(request)   
-    .then(cachedResponse => {
-      if (cachedResponse) {
-        return cachedResponse;
-      }
-      return fetch(request)
-      .then(networkResponse => {
-        if (!networkResponse || networkResponse.status !== 200 ) {     
-          return networkResponse;       
+    caches.match(request)
+      .then(cachedResponse => {
+
+        if (cachedResponse) {
+          return cachedResponse;
         }
-        const responseClone = networkResponse.clone();
-        caches.open(CACHE_NAME)
-          .then(cache =>
-            cache.put(request, responseClone)
-          );
-        return networkResponse;
-      });
-    })
-    .catch(() =>
-    caches.match('./index.html')            
-  ));
+
+        return fetch(request)
+          .then(networkResponse => {
+
+            if (
+              !networkResponse ||
+              networkResponse.status !== 200 ||
+              networkResponse.type !== 'basic'
+            ) {
+              return networkResponse;
+            }
+
+            const responseClone = networkResponse.clone();
+
+            caches.open(CACHE_NAME)
+              .then(cache => {
+                cache.put(request, responseClone);
+              });
+
+            return networkResponse;
+          });
+
+      })
+      .catch(() => caches.match('./index.html'))
+  );
 });
 
 /* =========================
-PUSH NOTIFICATIONS
+   PUSH NOTIFICATIONS
 ========================= */
 
 self.addEventListener('push', (event) => {
+
   let data = {
     title: 'Smiljanić Komerc',
-    body: 'Novo obaveštenje.' 
+    body: 'Novo obaveštenje.'
   };
 
-  
-  if (event.data) 
+  if (event.data) {
     try {
       data = event.data.json();
-    } 
-    catch {  
+    } catch (err) {
       data.body = event.data.text();
     }
-}
-const options = {
-  body: data.body,
-  icon: './icon-192.png',
-  badge: './icon-192.png',
-  vibrate: [200, 100, 200],
-  requireInteraction: true,
-  renotify: true,
-  tag: 'sk-info',
-  actions: [
-    {
-      action: 'open',
-      title: 'Otvori'
-    }
-  ]
-};
+  }
 
+  const options = {
+    body: data.body,
+    icon: './icon-192.png',
+    badge: './icon-192.png',
+    vibrate: [200, 100, 200],
+    requireInteraction: true,
+    renotify: true,
+    tag: 'sk-info',
+    actions: [
+      {
+        action: 'open',
+        title: 'Otvori'
+      }
+    ]
+  };
 
-event.waitUntil(
-  self.registration.showNotification(
-    data.title,
-    options
-  )
-);
+  event.waitUntil(
+    self.registration.showNotification(
+      data.title,
+      options
+    )
+  );
 
 });
 
 /* =========================
-NOTIFICATION CLICK
+   NOTIFICATION CLICK
 ========================= */
 
 self.addEventListener('notificationclick', (event) => {
 
-
   event.notification.close();
 
-event.waitUntil(
+  event.waitUntil(
 
-clients.matchAll({
-  type: 'window',
-  includeUncontrolled: true
-})
+    clients.matchAll({
+      type: 'window',
+      includeUncontrolled: true
+    })
 
-.then(clientList => {
+    .then(clientList => {
 
-  for (const client of clientList) {
+      for (const client of clientList) {
+        if ('focus' in client) {
+          return client.focus();
+        }
+      }
 
-    if ('focus' in client) {
-      return client.focus();
-    }
+      if (clients.openWindow) {
+        return clients.openWindow('./');
+      }
 
-  }
+    })
 
-  if (clients.openWindow) {
-    return clients.openWindow('./');
-  }
-
-})
-
-);
+  );
 
 });
 
 /* =========================
-MESSAGE HANDLER
+   MESSAGE HANDLER
 ========================= */
 
 self.addEventListener('message', (event) => {
 
-if (event.data === 'SKIP_WAITING') {
-self.skipWaiting();
-}
+  if (event.data === 'SKIP_WAITING') {
+    self.skipWaiting();
+  }
 
 });
