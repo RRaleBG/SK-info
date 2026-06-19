@@ -13,8 +13,8 @@ const STATIC_ASSETS = [
   './m3u-parser.js',
   './favicon.ico',
   './smicom.ico',
-  './icon-192.png',
-  './icon-512.png',
+  './icon-192x192.png',
+  './icon-512x512.png',
   './icon-maskable-512.png'
 ];
 
