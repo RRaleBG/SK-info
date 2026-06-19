@@ -75,21 +75,36 @@ async function updateTruckBan() {
         ...belgium,
         ...estonia,
         ...lithuania
-    ];
+    ];    
 
-    // Danasnji datum
-    const today = new Date().toISOString().split("T")[0];
-    const weekData = [
-        {
-            day: "Ponedeljak",
-            date: today,
-            entries: bans
-        }
+    const days = [   
+        "Ponedeljak",
+        "Utorak",
+        "Sreda",
+        "Četvrtak",
+        "Petak",
+        "Subota",
+        "Nedelja",
     ];
+    
+    // Danasnji datum
+    const formatDate = (date) => date.toISOString().split("T")[0]
+
+    // Generisanje svih dana u nedelji
+    const weekData = days.map((day, index) => {
+    const date = new Date(today);
+    date.setDate(today.getDate() + index);
+
+    return {
+        day,
+        date: formatDate(date),
+        entries: bans
+    };
+});
 
     fs.mkdirSync("./public/data", { recursive: true });
     fs.writeFileSync("./public/data/eu-truckban.json", JSON.stringify({ week: weekData }, null, 2));
-    console.log("TruckBan data updated! -> public/data/eu-truckban.json");
+    console.log("Restrikcije azurirane! -> public/data/eu-truckban.json");
 }
 
 updateTruckBan();
