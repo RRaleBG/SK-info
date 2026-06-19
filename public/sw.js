@@ -1,5 +1,4 @@
-const CACHE_NAME = 'sk-info-v6';
-
+const CACHE_NAME = 'sk-info-v7';
 const STATIC_ASSETS = [
   './',
   './index.html',
@@ -103,9 +102,10 @@ PUSH NOTIFICATIONS
 self.addEventListener('push', (event) => {
   let data = {
     title: 'Smiljanić Komerc',
-    body: 'Novo obaveštenje.'
+    body: 'Novo obaveštenje.' 
   };
 
+  
   if (event.data) 
     try {
       data = event.data.json();
@@ -114,7 +114,6 @@ self.addEventListener('push', (event) => {
       data.body = event.data.text();
     }
 }
-
 const options = {
   body: data.body,
   icon: './icon-192.png',
@@ -131,6 +130,7 @@ const options = {
   ]
 };
 
+
 event.waitUntil(
   self.registration.showNotification(
     data.title,
@@ -146,7 +146,8 @@ NOTIFICATION CLICK
 
 self.addEventListener('notificationclick', (event) => {
 
-event.notification.close();
+
+  event.notification.close();
 
 event.waitUntil(
 
