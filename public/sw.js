@@ -1,20 +1,21 @@
 const CACHE_NAME = 'sk-info-v5';
 
 const STATIC_ASSETS = [
-'./',
-'./index.html',
-'./kanali.html',
-'./style.css',
-'./site.js',
-'./tv.js',
-'./kanali.js',
-'./channels.js',
-'./m3u-parser.js',
-'./manifest.json',
-'./favicon.ico',
-'./icon-192.png',
-'./icon-512.png',
-'./icon-maskable-512.png'
+  './',
+  './index.html',
+  './kanali.html',
+  './manifest.json',
+  './style.css',
+  './site.js',
+  './tv.js',
+  './kanali.js',
+  './channels.js',
+  './m3u-parser.js',
+  './favicon.ico',
+  './smicom.ico',
+  './icon-192.png',
+  './icon-512.png',
+  './icon-maskable-512.png'
 ];
 
 /* =========================
@@ -40,25 +41,16 @@ ACTIVATE
 self.addEventListener('activate', (event) => {
 
 event.waitUntil(
-
 Promise.all([
-
   caches.keys().then(keys =>
-
     Promise.all(
-
       keys.map(key => {
-
         if (key !== CACHE_NAME) {
           return caches.delete(key);
         }
-
       })
-
     )
-
   ),
-
   self.clients.claim()
 
 ])
