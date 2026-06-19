@@ -23,15 +23,11 @@ INSTALL
 ========================= */
 
 self.addEventListener('install', (event) => {
-
-event.waitUntil(
-
-caches.open(CACHE_NAME)
-  .then(cache => cache.addAll(STATIC_ASSETS))
-  .then(() => self.skipWaiting())
-
-);
-
+  event.waitUntil(
+    caches.open(CACHE_NAME)  
+    .then(cache => cache.addAll(STATIC_ASSETS))
+    .then(() => self.skipWaiting())
+  );
 });
 
 /* =========================
@@ -39,24 +35,20 @@ ACTIVATE
 ========================= */
 
 self.addEventListener('activate', (event) => {
-
-event.waitUntil(
-Promise.all([
-  caches.keys().then(keys =>
-    Promise.all(
-      keys.map(key => {
-        if (key !== CACHE_NAME) {
-          return caches.delete(key);
-        }
-      })
-    )
-  ),
-  self.clients.claim()
-
-])
-
-);
-
+  event.waitUntil(
+    Promise.all([
+      caches.keys().then(keys =>
+        Promise.all(
+          keys.map(key => {
+            if (key !== CACHE_NAME) {
+              return caches.delete(key);
+            }
+          })
+        )
+      ),  
+      self.clients.claim()
+    ])
+  );
 });
 
 /* =========================
@@ -64,67 +56,44 @@ FETCH
 ========================= */
 
 self.addEventListener('fetch', (event) => {
+  const request = event.request;
+  const url = request.url;
 
-const request = event.request;
-const url = request.url;
-
-// Ne diraj HLS streamove
-if (
-url.includes('.m3u8') ||
-url.includes('.ts') ||
-url.includes('localhost:4000')
-) {
-return;
+  // HLS streamovi
+  if ( 
+    url.includes('.m3u8') ||
+    url.includes('.ts') ||
+    url.includes('localhost:4000')
+  ) {
+    return;
 }
+  // Ne keširati API pozive
+  if (request.method !== 'GET') {  
+    return;
+  }
 
-// Ne keširaj API pozive
-if (
-request.method !== 'GET'
-) {
-return;
-}
-
-event.respondWith(
-
-caches.match(request)
-
-  .then(cachedResponse => {
-
-    if (cachedResponse) {
-      return cachedResponse;
-    }
-
-    return fetch(request)
-
+  event.respondWith(
+    caches.match(request)   
+    .then(cachedResponse => {
+      if (cachedResponse) {
+        return cachedResponse;
+      }
+      return fetch(request)
       .then(networkResponse => {
-
-        if (
-          !networkResponse ||
-          networkResponse.status !== 200
-        ) {
-          return networkResponse;
+        if (!networkResponse || networkResponse.status !== 200 ) {     
+          return networkResponse;       
         }
-
-        const responseClone =
-          networkResponse.clone();
-
+        const responseClone = networkResponse.clone();
         caches.open(CACHE_NAME)
           .then(cache =>
             cache.put(request, responseClone)
           );
-
         return networkResponse;
-
       });
-
-  })
-
-  .catch(() =>
-    caches.match('./index.html')
-  )
-
-);
-
+    })
+    .catch(() =>
+    caches.match('./index.html')            
+  ));
 });
 
 /* =========================
@@ -132,56 +101,41 @@ PUSH NOTIFICATIONS
 ========================= */
 
 self.addEventListener('push', (event) => {
+  let data = {
+    title: 'Smiljanić Komerc',
+    body: 'Novo obaveštenje.'
+  };
 
-let data = {
-title: 'Smiljanić Komerc',
-body: 'Novo obaveštenje.'
-};
-
-if (event.data) {
-
-try {
-
-  data = event.data.json();
-
-} catch {
-
-  data.body = event.data.text();
-
-}
-
+  if (event.data) 
+    try {
+      data = event.data.json();
+    } 
+    catch {  
+      data.body = event.data.text();
+    }
 }
 
 const options = {
-
-body: data.body,
-
-icon: './icon-192.png',
-
-badge: './icon-192.png',
-
-vibrate: [200, 100, 200],
-
-requireInteraction: true,
-
-renotify: true,
-
-tag: 'sk-info',
-
-actions: [
-  {
-    action: 'open',
-    title: 'Otvori'
-  }
-]
-
+  body: data.body,
+  icon: './icon-192.png',
+  badge: './icon-192.png',
+  vibrate: [200, 100, 200],
+  requireInteraction: true,
+  renotify: true,
+  tag: 'sk-info',
+  actions: [
+    {
+      action: 'open',
+      title: 'Otvori'
+    }
+  ]
 };
 
 event.waitUntil(
-self.registration.showNotification(
-data.title,
-options
-)
+  self.registration.showNotification(
+    data.title,
+    options
+  )
 );
 
 });
