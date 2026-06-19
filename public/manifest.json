@@ -6,8 +6,8 @@
 "description": "Profesionalna logistička platforma za praćenje stanja na graničnim prelazima, zabrana saobraćaja za teretna vozila, video nadzora, transportnih informacija i operativne podrške vozačima i dispečerima u realnom vremenu.",
 
 "lang": "sr-RS",
-"start_url": "/public/",
-"scope": "/SK-info/",
+"start_url": "./",
+"scope": "./",
 
 "display": "standalone",
 "orientation": "portrait",
