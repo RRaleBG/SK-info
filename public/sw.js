@@ -15,7 +15,7 @@ const STATIC_ASSETS = [
   './smicom.ico',
   './icon-192x192.png',
   './icon-512x512.png',
-  './icon-maskable-512.png'
+  './icon-maskable-512x512.png'
 ];
 
 /* =========================
