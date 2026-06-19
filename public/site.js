@@ -163,7 +163,7 @@ async function loadTruckBan() {
             modal.style.display = "block";
         });
 
-        container.appendChild(details);
+      //  container.appendChild(details);
     });
 
     // Zatvaranje modala
