@@ -1,4 +1,4 @@
-const CACHE_NAME = 'sk-info-v7';
+const CACHE_NAME = 'sk-info-v8';
 
 const STATIC_ASSETS = [
   './',
