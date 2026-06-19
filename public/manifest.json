@@ -6,7 +6,7 @@
 "description": "Profesionalna logistička platforma za praćenje stanja na graničnim prelazima, zabrana saobraćaja za teretna vozila, video nadzora, transportnih informacija i operativne podrške vozačima i dispečerima u realnom vremenu.",
 
 "lang": "sr-RS",
-"start_url": "/SK-info/",
+"start_url": "/public/",
 "scope": "/SK-info/",
 
 "display": "standalone",
@@ -102,16 +102,10 @@
 "url": "./#granice"
 },
 {
-"name": "EU zabrane",
-"short_name": "Truck Ban",
-"description": "Pregled zabrana saobraćaja za teretna vozila",
-"url": "./#truckban"
-},
-{
-"name": "TV Kanali",
-"short_name": "TV",
-"description": "TV i video sadržaj",
-"url": "./tv.html"
+  "name": "EU zabrane",
+  "short_name": "Truck Ban",
+  "description": "Pregled zabrana saobraćaja za teretna vozila",
+  "url": "./#truckban"
 }
 ]
 }
