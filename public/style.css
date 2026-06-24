@@ -39,6 +39,10 @@
   color: var(--badge-warning);
 }
 
+favicon {
+  background: none;
+}
+
 .badge-info {
   background: rgba(59, 130, 246, 0.18);
   color: var(--badge-info);
@@ -62,8 +66,8 @@ body {
   padding: 5px;
 }
 
-a{
-  text-decoration:none;
+a {
+  text-decoration: none;
 }
 
 header {
@@ -198,7 +202,6 @@ header {
 .kpi-card:nth-child(4) {
   grid-area: kpi4;
 }
-
 .kpi-title {
   font-size: 0.9rem;
   color: var(--muted);
@@ -269,19 +272,16 @@ header {
   width: 100%;
   min-height: 170px;
 }
-
 @media (min-width: 900px) {
   .weather-grid {
     grid-template-columns: 1fr 1fr; /* 2 kolone */
   }
 }
-
 @media (min-width: 1200px) {
   .weather-grid {
     grid-template-columns: 1fr 1fr 1fr; /* 3 kolone */
   }
 }
-
 @media (min-width: 1400px) {
   .weather-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 kolone */
@@ -296,12 +296,10 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-
 .weather .header .badge {
   background: var(--badge-success);
   color: rgb(134, 239, 172);
 }
-
 /* Kontejner za ikonu */
 .weather-icon-anim {
   font-size: 2.8rem;
@@ -312,7 +310,6 @@ header {
 .weather:hover {
   transform: scale(1.01); /* lagani hover efekat */
 }
-
 .weather .footer-update {
   text-align: center;
   padding-top: 15px;
@@ -355,7 +352,6 @@ header {
   margin-bottom: 0;
   padding: 0 10px;
 }
-
 .temp-value {
   text-align: center;
   margin-top: 5px;
@@ -363,14 +359,12 @@ header {
   font-weight: bold;
   line-height: 1;
 }
-
 .temp-value sup {
   font-size: 0.5em;
   vertical-align: top;
   margin-left: 2px;
   color: #f7250e;
 }
-
 .condition {
   font-size: 1.1rem;
   color: #0be97a;
@@ -379,7 +373,6 @@ header {
   font-weight: bold;
   letter-spacing: 0.2cap;
 }
-
 /* Donji deo weather-a sa 3 kolone */
 .bottom-info {
   display: flex;
@@ -409,12 +402,6 @@ header {
   justify-content: center;
   gap: 8px; /* Razmak između ikonice i teksta */
 }
-/* .info-value {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #ffffff;
-  opacity: 0.7;
-} */
 /* Postavljanje veličine za sve ikone */
 .wind-spinner svg {
   width: 24px;
@@ -422,7 +409,6 @@ header {
   fill: #54d7ff; /* Boja vetrenjače */
   display: block; /* Uklanja eventualne viškove prostora */
 }
-
 /* Sve animirane stavke moraju biti inline-block da bi transform radila */
 .wind-spinner,
 .humidity-wave,
@@ -431,12 +417,10 @@ header {
   transform-origin: center;
   animation: pulse-glow 2s infinite ease-in-out;
 }
-
 /* 1. Vetrenjača - Rotacija */
 .wind-spinner {
   animation: spin 3s linear infinite;
 }
-
 /* 2. Vlažnost - Pulsiranje (kao kap) */
 .humidity-wave {
   animation: pulse-wave 2s infinite ease-in-out;
@@ -589,8 +573,9 @@ header {
   transform: translateY(-4px);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
 }
+
 .flag-icon {
-  width: 24px;
+  width: 26px;
   height: 24px;
   object-fit: cover;
   margin-right: 8px;
@@ -598,16 +583,12 @@ header {
   border-radius: 50%;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
 }
-.country-block summary {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
 /* Header kartice */
 .country-block summary {
   display: flex;
   justify-content: space-between; /* ime levo, zastava desno */
   align-items: center;
+  gap: 8px;
   padding: 1rem;
   font-size: 1.2rem;
   font-weight: 600;
@@ -615,20 +596,6 @@ header {
   background: #0e1a2b;
   cursor: pointer;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.flag-icon {
-  width: 28px;
-  height: 20px;
-  object-fit: cover;
-  margin-left: 8px;
-  border-radius: 2px;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
-}
-.country-block summary {
-  display: flex;
-  justify-content: space-between; /* ime levo, zastava desno */
-  align-items: center;
 }
 
 /* Unutrašnji sadržaj */
@@ -742,7 +709,6 @@ header {
   background: rgba(0, 0, 0, 0.6);
   overflow-y: auto; /* omogućava skrolovanje celog overlaya */
 }
-
 .modal-content {
   background: #16263d;
   border-radius: 12px;
@@ -755,12 +721,10 @@ header {
   max-height: 90vh; /* ograniči visinu */
   overflow-y: auto; /* unutrašnji scroll */
 }
-
 .modal-content h3 {
   color: #00c896;
   margin-bottom: 1rem;
 }
-
 .close {
   float: right;
   font-size: 1.5rem;
@@ -768,7 +732,6 @@ header {
   cursor: pointer;
   color: #fff;
 }
-
 .close:hover {
   color: #ff6b6b;
 }
@@ -854,4 +817,83 @@ footer {
   padding: 30px 10px;
   color: var(--muted);
   font-size: 12px;
+}
+
+/* PWA */
+/* Pozadina koja prekriva ceo ekran */
+.pwa-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 23, 42, 0.6); /* Tamna, providna pozadina */
+  backdrop-filter: blur(8px); /* Zamućenje ekrana iza popupa */
+  -webkit-backdrop-filter: blur(8px);
+  display: none; /* Sakriveno po defaultu */
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Providna staklena kartica na sredini ekrana */
+.pwa-card {
+  background: rgba(30, 41, 59, 0.75); /* Tamno plava sa 75% vidljivosti */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Tanka svetla ivica */
+  border-radius: 16px;
+  padding: 24px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+}
+.pwa-logo-container {
+  margin-bottom: 16px;
+}
+.pwa-app-logo {
+  width: 72px;
+  height: 72px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+.pwa-card h2 {
+  margin: 0 0 10px 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.pwa-card p {
+  font-size: 0.95rem;
+  color: #cbd5e1; /* Blago siva boja teksta */
+  line-height: 1.5;
+  margin: 0 0 24px 0;
+}
+/* Dugmići */
+.pwa-buttons {
+  display: flex;
+  gap: 12px;
+}
+.pwa-btn {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.pwa-btn-primary {
+  background: #38bdf8; /* Svetlo plava */
+  color: #0f172a;
+}
+.pwa-btn-primary:hover {
+  background: #0ea5e9;
+}
+.pwa-btn-secondary {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+.pwa-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.15);
 }
