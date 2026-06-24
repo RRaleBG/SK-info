@@ -116,6 +116,9 @@ async function loadTruckBan() {
         "Ćeška": "./flags/cz.png",
         "Estonija": "./flags/est.png",
         "Italija": "./flags/ita.png",
+        "Holandija": "./flags/nl.png",
+        "Španija": "./flags/sp.png",
+        "Portugal": "./flags/portugal.png",     
     };
     Object.entries(groupedByCountry).forEach(([country, items]) => {
         const details = document.createElement("details");
